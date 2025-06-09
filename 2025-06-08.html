@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年6月中国负极材料行业周报</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            background-color: rgba(59, 130, 246, 0.2);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+        .chart-container {
+            height: 300px;
+            position: relative;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu.active {
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-battery-three-quarters text-blue-500 text-xl mr-2"></i>
+                <span class="font-bold text-lg">负极材料周报</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#news" class="nav-link text-gray-600 hover:text-blue-500">行业资讯</a>
+                <a href="#data" class="nav-link text-gray-600 hover:text-blue-500">行业数据</a>
+                <a href="#trend" class="nav-link text-gray-600 hover:text-blue-500">发展趋势</a>
+            </div>
+            <button class="md:hidden text-gray-600" id="menuToggle">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div class="mobile-menu bg-white md:hidden" id="mobileMenu">
+            <div class="container mx-auto px-4 py-2">
+                <a href="#news" class="block py-2 text-gray-600 hover:text-blue-500">行业资讯</a>
+                <a href="#data" class="block py-2 text-gray-600 hover:text-blue-500">行业数据</a>
+                <a href="#trend" class="block py-2 text-gray-600 hover:text-blue-500">发展趋势</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 头部 -->
+    <header class="bg-gradient-to-r from-blue-500 to-blue-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">2025年6月中国负极材料行业周报</h1>
+            <p class="text-lg opacity-90">6月2号-6月8号行业动态与数据分析</p>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 行业资讯 -->
+        <section id="news" class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white mr-3">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <h2 class="text-2xl font-bold">行业资讯</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 资讯卡片1 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-gavel mr-1"></i>政策</span>
+                        <span class="text-sm text-gray-500 ml-auto">6月2日</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">负极初裁关税税率调整</h3>
+                    <p class="text-gray-600 mb-4">湖州凯金新能源科技有限公司和Shanghai Shaosheng Knitted Sweat因未参与应诉，初步裁定计划对两家企业分别加征712.03%、721.03%的关税。其余中国负极材料生产商及出口商的加征税率均为6.55%。</p>
+                    <a href="https://news.smm.cn/live/detail/103343091" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片2 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-flask mr-1"></i>专利</span>
+                        <span class="text-sm text-gray-500 ml-auto">6月7日</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">瑞浦兰钧取得负极片及叠片电池专利</h3>
+                    <p class="text-gray-600 mb-4">瑞浦兰钧能源股份有限公司取得"一种负极片及叠片电池"专利。该负极片通过设置不同活性物质层涂覆面密度，避免较多活性物质不参与嵌锂造成的浪费。</p>
+                    <a href="http://m.toutiao.com/group/7513172129651884581/?upstream_biz=doubao" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片3 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-flask mr-1"></i>专利</span>
+                        <span class="text-sm text-gray-500 ml-auto">6月9日</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">泰鼎新能源申请硅碳复合薄膜负极材料专利</h3>
+                    <p class="text-gray-600 mb-4">泰鼎新能源（浙江）有限公司申请"硅碳复合薄膜负极材料及其制备方法与应用"专利。该硅碳复合薄膜负极材料为三层薄膜结构，能有效抑制硅纳米颗粒脱离电极接触。</p>
+                    <a href="http://m.toutiao.com/group/7513743934150197786/?upstream_biz=doubao" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片4 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-flask mr-1"></i>专利</span>
+                        <span class="text-sm text-gray-500 ml-auto">6月6日</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">孝感楚能新能源申请负极材料相关专利</h3>
+                    <p class="text-gray-600 mb-4">孝感楚能新能源创新科技有限公司申请"一种负极材料及其制备方法和应用、锂离子电池"专利。该负极材料包括多孔硅、有机凝胶和氧化石墨烯。</p>
+                    <a href="http://m.toutiao.com/group/7512677120951190079/?upstream_biz=doubao" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片5 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-bolt mr-1"></i>技术</span>
+                        <span class="text-sm text-gray-500 ml-auto">4月21日</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">宁德时代快充、钠电等新品发布打开负极材料新空间</h3>
+                    <p class="text-gray-600 mb-4">宁德时代发布二代神行、二代钠电、骁遥双核等新产品。二代神行电池峰值充电倍率12C，石墨负极与负极包覆材料有望受益。</p>
+                    <a href="https://wap.eastmoney.com/a/202504223383670352.html" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片6 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-chart-line mr-1"></i>市场</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">负极材料行业集中度稳中有升，龙头以差异化取胜</h3>
+                    <p class="text-gray-600 mb-4">随着固定资产投资放缓、市场需求平稳增长，预计2025年负极材料价格将触底反弹。行业呈现两极分化格局。</p>
+                    <a href="http://m.toutiao.com/group/7442515496399831586/?upstream_biz=doubao" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+            </div>
+
+            <!-- 查看更多按钮 -->
+            <div class="text-center mt-8">
+                <button id="loadMore" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full transition-colors">
+                    查看更多资讯 <i class="fas fa-chevron-down ml-2"></i>
+                </button>
+            </div>
+
+            <!-- 隐藏的资讯内容 -->
+            <div id="moreNews" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <!-- 资讯卡片7 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-industry mr-1"></i>项目</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">璞泰来硅基负极项目进展</h3>
+                    <p class="text-gray-600 mb-4">璞泰来安徽芜湖硅基负极项目预计2025年上半年首批硅碳负极产能建成投产；四川紫宸一期10万吨产能项目部分产能已贯通。</p>
+                    <a href="https://xueqiu.com/8306989089/325544229" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片8 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-battery-full mr-1"></i>技术</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">2025年中国固态电池产业链图谱研究分析</h3>
+                    <p class="text-gray-600 mb-4">固态电池被视为下一代动力电池终极解决方案。2024年中国负极材料出货量208万吨，预计2025年增至241万吨。</p>
+                    <a href="http://m.toutiao.com/group/7472870460439446079/?upstream_biz=doubao" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片9 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-chart-line mr-1"></i>市场</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">锂电负极市场展望：需求持续增长，资源向头部集中</h3>
+                    <p class="text-gray-600 mb-4">2025年负极市场需求将因新能源汽车、储能等领域发展而持续增长。行业增速放缓但前景乐观。</p>
+                    <a href="https://xueqiu.com/2137758205/318981544" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片10 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-atom mr-1"></i>技术</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">2025年中国硅碳负极材料市场</h3>
+                    <p class="text-gray-600 mb-4">硅碳负极材料因高能量密度等优势成为热点。2023年全球市场规模达167亿元，预计2030年增至261亿元。</p>
+                    <a href="https://m.chinairn.com/hyzx/20250304/164019379.shtml" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片11 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-bolt mr-1"></i>技术</span>
+                        <span class="text-sm text-gray-500 ml-auto">4月21日</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">中信证券：宁德时代快充、钠电等新品发布，打开负极材料新空间</h3>
+                    <p class="text-gray-600 mb-4">宁德时代发布新产品，二代神行电池石墨负极与包覆材料有望受益；二代钠电池量产有望带动硬碳负极放量。</p>
+                    <a href="https://wap.eastmoney.com/a/202504223383670352.html" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片12 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-file-alt mr-1"></i>报告</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">汽车锂离子电池负极材料行业2025年国内市场发展情况与趋势分析报告</h3>
+                    <p class="text-gray-600 mb-4">报告涵盖中国汽车锂离子电池负极材料行业多方面情况，包括市场规模、竞争态势、价格走势等。</p>
+                    <a href="https://m.gelonghui.com/p/2273177" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片13 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-file-alt mr-1"></i>报告</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">2025年碳负极材料行业国内市场情况与发展趋势调研报告</h3>
+                    <p class="text-gray-600 mb-4">报告从多方面阐述中国碳负极材料市场，包括规模、细分结构、供需、竞争等。</p>
+                    <a href="https://m.gelonghui.com/p/1618476" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片14 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-file-alt mr-1"></i>报告</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">2025-2031年负极材料行业市场调研及发展趋势预测报告</h3>
+                    <p class="text-gray-600 mb-4">负极材料行业保持较高发展速度，但行业竞争激烈，出现两极分化。技术创新成发展驱动力。</p>
+                    <a href="https://finance.sina.com.cn/roll/2025-04-30/doc-ineuxwev4152899.shtml" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片15 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-chart-line mr-1"></i>趋势</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">2025年负极材料行业发展趋势：技术创新成关键驱动力</h3>
+                    <p class="text-gray-600 mb-4">2025年负极材料市场规模有望突破500亿元，技术创新成核心驱动力，应用领域多元化。</p>
+                    <a href="https://www.chinabgao.com/info/1255015.html" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片16 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-file-alt mr-1"></i>政策</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">政策东风下的负极材料：破茧成蝶还是负重前行？</h3>
+                    <p class="text-gray-600 mb-4">政府工作报告推动负极材料行业从粗放式产能扩张向"智能制造 + 服务化"转型，但也警示产能过剩。</p>
+                    <a href="https://m.sohu.com/a/867210236_122263067/" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片17 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-file-alt mr-1"></i>报告</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">2025至2030中国硅碳负极材料行业经营状况及竞争动态研究报告</h3>
+                    <p class="text-gray-600 mb-4">2025 - 2030年中国硅碳负极材料行业预计稳健增长，2025年市场规模达185亿元，2030年增至360亿元。</p>
+                    <a href="https://m.renrendoc.com/paper/423090461.html" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片18 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-industry mr-1"></i>项目</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">山西大同一钠电负极材料项目预计6月投产</h3>
+                    <p class="text-gray-600 mb-4">山西大同新荣经济技术开发区3000吨钠离子电池负极材料项目总投资1.2亿元，预计6月投产。</p>
+                    <a href="http://www.hirohida.com/information/details/22041.html" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片19 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-chart-line mr-1"></i>市场</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">锂电负极材料产业链一体化更加强化头部企业竞争力</h3>
+                    <p class="text-gray-600 mb-4">中国负极材料产量占全球超90%，但行业产能过剩，价格受影响。头部企业优势明显，行业集中度提升。</p>
+                    <a href="https://m.bjx.com.cn/mnews/20250218/1427723.shtml" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+
+                <!-- 资讯卡片20 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="tag"><i class="fas fa-chart-line mr-1"></i>市场</span>
+                        <span class="text-sm text-gray-500 ml-auto">近期</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">2024年中国锂电池负极材料行业发展现状、市场结构及未来前景研判</h3>
+                    <p class="text-gray-600 mb-4">受益于新能源汽车等终端市场增长，2024年上半年中国锂电池负极材料出货量同比增长28.2%。</p>
+                    <a href="https://m.chyxx.com/industry/1195847.html" class="text-blue-500 text-sm hover:underline">查看原文 <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行业数据 -->
+        <section id="data" class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white mr-3">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h2 class="text-2xl font-bold">行业数据</h2>
+            </div>
+
+            <div class="glass-card p-6 mb-8">
+                <h3 class="font-semibold text-lg mb-4">中国负极材料出货量</h3>
+                <div class="chart-container">
+                    <canvas id="shipmentChart"></canvas>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-6">
+                    <h3 class="font-semibold text-lg mb-4">市场格局</h3>
+                    <div class="chart-container">
+                        <canvas id="marketChart"></canvas>
+                    </div>
+                </div>
+                <div class="glass-card p-6">
+                    <h3 class="font-semibold text-lg mb-4">产品结构</h3>
+                    <div class="chart-container">
+                        <canvas id="productChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 发展趋势 -->
+        <section id="trend" class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white mr-3">
+                    <i class="fas fa-trend-up"></i>
+                </div>
+                <h2 class="text-2xl font-bold">发展趋势</h2>
+            </div>
+
+            <div class="glass-card p-6">
+                <h3 class="font-semibold text-lg mb-4">行业发展趋势分析</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-3 mt-1">
+                            <i class="fas fa-check text-xs"></i>
+                        </div>
+                        <p>随着新能源汽车、储能等领域的快速发展，市场对负极材料的需求量迅速增加，推动了负极材料行业快速发展。</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-3 mt-1">
+                            <i class="fas fa-check text-xs"></i>
+                        </div>
+                        <p>未来，负极材料行业有望继续保持增长态势，但也面临着技术创新、成本控制、市场竞争等方面的挑战。</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-3 mt-1">
+                            <i class="fas fa-check text-xs"></i>
+                        </div>
+                        <p>硅基负极材料等新型负极材料的研发和应用将成为行业发展的重要方向。</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-3 mt-1">
+                            <i class="fas fa-check text-xs"></i>
+                        </div>
+                        <p>行业呈现"一超多强"的格局，贝特瑞、杉杉、璞泰来等头部企业主导市场，中晟新材、天目先导等新锐企业通过细分领域突破。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p class="mb-2">created by <a href="https://space.coze.cn" class="text-blue-500 hover:underline">coze space</a></p>
+            <p>页面内容均由 AI 生成，仅供参考</p>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        });
+
+        // 查看更多资讯
+        document.getElementById('loadMore').addEventListener('click', function() {
+            const moreNews = document.getElementById('moreNews');
+            const button = document.getElementById('loadMore');
+            
+            if (moreNews.classList.contains('hidden')) {
+                moreNews.classList.remove('hidden');
+                button.innerHTML = '收起资讯 <i class="fas fa-chevron-up ml-2"></i>';
+            } else {
+                moreNews.classList.add('hidden');
+                button.innerHTML = '查看更多资讯 <i class="fas fa-chevron-down ml-2"></i>';
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // 关闭移动端菜单
+                    const mobileMenu = document.getElementById('mobileMenu');
+                    if (mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // 图表初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 出货量图表
+            const shipmentCtx = document.getElementById('shipmentChart').getContext('2d');
+            new Chart(shipmentCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2023', '2024', '2025(预测)'],
+                    datasets: [{
+                        label: '中国负极材料出货量 (万吨)',
+                        data: [165, 208, 241],
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.raw + '万吨';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 150,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '万吨';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 市场格局图表
+            const marketCtx = document.getElementById('marketChart').getContext('2d');
+            new Chart(marketCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['贝特瑞', '杉杉股份', '璞泰来', '中晟新材', '天目先导', '其他'],
+                    datasets: [{
+                        data: [25, 18, 15, 10, 8, 24],
+                        backgroundColor: [
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(99, 102, 241, 0.8)',
+                            'rgba(139, 92, 246, 0.8)',
+                            'rgba(168, 85, 247, 0.8)',
+                            'rgba(217, 70, 239, 0.8)',
+                            'rgba(236, 72, 153, 0.8)'
+                        ],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.raw || 0;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = Math.round((value / total) * 100);
+                                    return `${label}: ${percentage}%`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 产品结构图表
+            const productCtx = document.getElementById('productChart').getContext('2d');
+            new Chart(productCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['人造石墨', '天然石墨', '硅基负极', '其他'],
+                    datasets: [{
+                        label: '2024年出货量占比 (%)',
+                        data: [83.3, 12.5, 2.1, 2.1],
+                        backgroundColor: [
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(99, 102, 241, 0.8)',
+                            'rgba(139, 92, 246, 0.8)',
+                            'rgba(168, 85, 247, 0.8)'
+                        ],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.raw + '%';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
