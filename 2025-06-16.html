@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年6月中国负极材料行业周报</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.5.0/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            position: relative;
+            display: inline-block;
+        }
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: rgba(59, 130, 246, 0.2);
+            z-index: -1;
+        }
+        .chart-container {
+            height: 320px;
+            width: 100%;
+            position: relative;
+        }
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .timeline-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- 头部 -->
+        <header class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">2025年6月中国负极材料行业周报</h1>
+            <p class="text-lg text-slate-600">6月9日-6月15日行业动态与发展分析</p>
+        </header>
+
+<!-- 行业资讯 -->
+        <section class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mr-3">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-800">行业资讯</h3>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                <!-- 资讯条目1 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-start">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold mb-2">宁德新能源申请负极活性材料专利</h4>
+                            <p class="text-slate-600 mb-3">6月13日消息，宁德新能源科技有限公司申请"一种负极活性材料、及其制备方法、电化学装置及电子设备"专利。该负极活性材料含石墨，表面具多孔结构，可提升储锂容量。</p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <a href="http://m.toutiao.com/group/7515258475367137827/?upstream_biz=doubao" class="text-indigo-600 hover:underline flex items-center">
+                                    <i class="fas fa-link mr-1"></i> 原文链接
+                                </a>
+                                <span class="mx-2">•</span>
+                                <span>2025-06-13</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 资讯条目2 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold mb-2">瑞浦兰钧能源申请负极活性材料相关专利</h4>
+                            <p class="text-slate-600 mb-3">6月13日消息，瑞浦兰钧能源股份有限公司申请"负极活性材料及其制备方法、负极极片、钠离子电池"专利。其负极活性材料含核壳结构金属磷化物，可提高电池循环和倍率性能。</p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <a href="http://m.toutiao.com/group/7515258478031405608/?upstream_biz=doubao" class="text-blue-600 hover:underline flex items-center">
+                                    <i class="fas fa-link mr-1"></i> 原文链接
+                                </a>
+                                <span class="mx-2">•</span>
+                                <span>2025-06-13</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 资讯条目3 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-start">
+                        <div class="bg-green-100 text-green-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold mb-2">和创新能源取得高倍率锂离子电池用硅碳负极材料专利</h4>
+                            <p class="text-slate-600 mb-3">6月13日消息，江门市和创新能源材料有限公司取得"一种高倍率锂离子电池用硅碳负极材料及其制备方法和应用"专利。</p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <a href="http://m.toutiao.com/group/7515287078100386338/?upstream_biz=doubao" class="text-green-600 hover:underline flex items-center">
+                                    <i class="fas fa-link mr-1"></i> 原文链接
+                                </a>
+                                <span class="mx-2">•</span>
+                                <span>2025-06-13</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 资讯条目4 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 text-purple-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold mb-2">中科电气下游客户需求量大，产能利用率高</h4>
+                            <p class="text-slate-600 mb-3">6月13日，中科电气在互动平台表示，目前下游客户对公司负极材料需求量较大，产能利用率处于较高水平，较去年同期呈增长趋势。</p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <a href="http://m.toutiao.com/group/7515374880297058867/?upstream_biz=doubao" class="text-purple-600 hover:underline flex items-center">
+                                    <i class="fas fa-link mr-1"></i> 原文链接
+                                </a>
+                                <span class="mx-2">•</span>
+                                <span>2025-06-13</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 资讯条目5 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 text-pink-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold mb-2">贝特瑞申请负极材料及其制备方法、电池专利</h4>
+                            <p class="text-slate-600 mb-3">6月14日消息，贝特瑞新材料集团股份有限公司申请"负极材料及其制备方法、电池"专利。该负极材料含活性物质，可降低产气现象。</p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <a href="http://m.toutiao.com/group/7515681334812049935/?upstream_biz=doubao" class="text-pink-600 hover:underline flex items-center">
+                                    <i class="fas fa-link mr-1"></i> 原文链接
+                                </a>
+                                <span class="mx-2">•</span>
+                                <span>2025-06-14</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 资讯条目6 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-start">
+                        <div class="bg-yellow-100 text-yellow-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold mb-2">国轩循环申请废旧锂电池负极石墨再利用方法专利</h4>
+                            <p class="text-slate-600 mb-3">6月14日消息，合肥国轩循环科技有限公司申请"一种废旧锂电池中负极石墨的再利用方法及再生石墨和应用"专利。该方法可获得高离子电导率Li的再生石墨。</p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <a href="http://m.toutiao.com/group/7515787497297838644/?upstream_biz=doubao" class="text-yellow-600 hover:underline flex items-center">
+                                    <i class="fas fa-link mr-1"></i> 原文链接
+                                </a>
+                                <span class="mx-2">•</span>
+                                <span>2025-06-14</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 资讯条目7 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-start">
+                        <div class="bg-red-100 text-red-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold mb-2">东岛新能源等申请高倍率MXene基复合负极材料相关专利</h4>
+                            <p class="text-slate-600 mb-3">6月14日消息，广东东岛新能源股份有限公司、湛江市聚鑫新能源有限公司申请"一种高倍率的MXene基复合负极材料及其制备方法和应用"专利。该材料能提升储钠容量和首次库伦效率等。</p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <a href="http://m.toutiao.com/group/7515669171494060556/?upstream_biz=doubao" class="text-red-600 hover:underline flex items-center">
+                                    <i class="fas fa-link mr-1"></i> 原文链接
+                                </a>
+                                <span class="mx-2">•</span>
+                                <span>2025-06-14</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 资讯条目8 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-start">
+                        <div class="bg-teal-100 text-teal-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold mb-2">正力新能申请锂金属负极聚合物保护层及其制备方法和应用专利</h4>
+                            <p class="text-slate-600 mb-3">6月13日消息，江苏正力新能电池技术股份有限公司申请"一种锂金属负极聚合物保护层及其制备方法和应用"专利。该保护层可改善电芯的循环性能。</p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <a href="http://m.toutiao.com/group/7515241143882433061/?upstream_biz=doubao" class="text-teal-600 hover:underline flex items-center">
+                                    <i class="fas fa-link mr-1"></i> 原文链接
+                                </a>
+                                <span class="mx-2">•</span>
+                                <span>2025-06-13</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 资讯条目9 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-start">
+                        <div class="bg-cyan-100 text-cyan-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold mb-2">2025高工钠电产业峰会和固态电池技术与应用峰会举行</h4>
+                            <p class="text-slate-600 mb-3">6月9日，2025高工钠电产业峰会在苏州香格里拉大酒店举行；6月10日，2025高工固态电池技术与应用峰会在同一地点举行。峰会聚焦钠电和固态电池技术发展。</p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <a href="https://xueqiu.com/7862386466/334310130" class="text-cyan-600 hover:underline flex items-center">
+                                    <i class="fas fa-link mr-1"></i> 原文链接
+                                </a>
+                                <span class="mx-2">•</span>
+                                <span>2025-06-09</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 资讯条目10 -->
+                <div class="glass-card p-6">
+                    <div class="flex items-start">
+                        <div class="bg-orange-100 text-orange-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold mb-2">中科电气拟投资80亿建阿曼负极材料项目</h4>
+                            <p class="text-slate-600 mb-3">6月4日，中科电气发布公告，拟投资建设阿曼年产20万吨锂离子电池负极材料一体化基地项目，计划总投资不超80亿元。</p>
+                            <div class="flex items-center text-sm text-slate-500">
+                                <a href="https://wap.eastmoney.com/a/202506043422008989.html" class="text-orange-600 hover:underline flex items-center">
+                                    <i class="fas fa-link mr-1"></i> 原文链接
+                                </a>
+                                <span class="mx-2">•</span>
+                                <span>2025-06-04</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行业现状 -->
+        <section class="mb-12">
+            <div class="glass-card p-6 mb-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">行业现状</h2>
+                </div>
+                
+                <div class="space-y-4">
+                    <p class="text-gray-700">中国负极材料行业近年来发展迅速，出货量持续增长。2024年中国负极材料出货量<span class="highlight">208万吨</span>，同比增长<span class="highlight">26%</span>，预计2025年将进一步增长至<span class="highlight">241万吨</span>。市场格局呈现"一超多强"，贝特瑞、杉杉、璞泰来等头部企业主导市场，中晟新材、天目先导等新锐企业通过细分领域突破。</p>
+                    
+                    <div class="chart-container mt-6">
+                        <canvas id="shipmentChart"></canvas>
+                    </div>
+                    
+                    <p class="text-gray-700">从产品类型来看，人造石墨负极材料是主流，2024年上半年出货量占比达到<span class="highlight">83.3%</span>，因其符合动力和储能电池对循环寿命、安全性等要求。硅基负极材料具有高理论比容量（可达<span class="highlight">4200mAh/g</span>）的优势，被认为是未来重要发展方向，但受制于技术及配套工艺不成熟、成本高等因素，目前仍处于商业化应用初期阶段，2023年其出货量占比仅有<span class="highlight">3.4%</span>。</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 rounded-full bg-blue-200 flex items-center justify-center text-blue-700 mr-2">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h3 class="font-medium">头部企业优势</h3>
+                            </div>
+                            <p class="text-sm text-gray-700">具有较强的研发与质量管理能力及成本控制优势，并凭借与下游锂电池龙头企业的深度合作，把握住了产品迭代的机遇。</p>
+                        </div>
+                        
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 rounded-full bg-red-200 flex items-center justify-center text-red-700 mr-2">
+                                    <i class="fas fa-exclamation"></i>
+                                </div>
+                                <h3 class="font-medium">新进入企业挑战</h3>
+                            </div>
+                            <p class="text-sm text-gray-700">产品以通用性石墨负极为主，难以满足动力电池高能量密度、快充等需求，只能承接同质化产品订单，陷入价格竞争，盈利水平受限。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <h3 class="font-bold mb-3">主要企业市场份额</h3>
+                        <div class="chart-container">
+                            <canvas id="marketShareChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 发展趋势 -->
+        <section>
+            <div class="glass-card p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mr-3">
+                        <i class="fas fa-arrow-trend-up"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">发展趋势</h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 flex items-center">
+                            <i class="fas fa-microchip text-blue-500 mr-2"></i>
+                            技术创新驱动
+                        </h3>
+                        <p class="text-gray-700">为满足更高性能需求，硅基负极、钛酸锂负极等新型材料的研发和商业化进程将加速。硅基负极虽存在体积膨胀问题，但通过纳米硅、硅碳复合材料等技术，有望缓解该问题，提升循环稳定性。同时，生产工艺的优化，如改进石墨化工艺，将大幅降低生产成本，提升产品一致性，增强市场竞争力。</p>
+                        
+                        <div class="mt-4">
+                            <div id="tech-trend" class="w-full"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 flex items-center">
+                            <i class="fas fa-industry text-green-500 mr-2"></i>
+                            应用领域多元化
+                        </h3>
+                        <p class="text-gray-700">负极材料的应用领域正从传统的消费电子向新能源汽车和储能系统扩展。在新能源汽车领域，随着续航里程和充电速度需求的提升，高性能负极材料的需求持续增长。预计到2025年，新能源汽车将成为负极材料最大的应用市场，占比超过<span class="highlight">50%</span>。储能市场的快速发展也为负极材料提供了新的增长点，随着可再生能源的普及，储能系统对锂电池的需求激增，进而带动了负极材料的需求。</p>
+                        
+                        <div class="mt-4">
+                            <div class="chart-container">
+                                <canvas id="applicationChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 flex items-center">
+                            <i class="fas fa-leaf text-emerald-500 mr-2"></i>
+                            环保与可持续发展
+                        </h3>
+                        <p class="text-gray-700">在全球碳中和目标的推动下，负极材料行业正朝着绿色化、可持续化方向发展。传统石墨负极材料的生产过程能耗较高，且对环境有一定影响，因此开发低能耗、低污染的制备工艺成为行业关注的焦点。此外，回收利用技术的进步也为负极材料的可持续发展提供了新思路，通过回收废旧锂电池中的负极材料，不仅可以减少资源浪费，还能降低生产成本，形成良性循环。预计到2025年，负极材料回收市场规模将达到<span class="highlight">50亿元</span>，成为行业的重要组成部分。</p>
+                        
+                        <div class="mt-4">
+                            <div id="recycle-process" class="w-full"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 flex items-center">
+                            <i class="fas fa-sitemap text-amber-500 mr-2"></i>
+                            一体化趋势显著
+                        </h3>
+                        <p class="text-gray-700">早期负极材料企业主要以委外石墨化加工的方式生产，未来预计将逐步向一体化方向发展。通过布局全工序建立成本优势，一方面，鉴于锂电池在储能和动力电池领域前景巨大，锂电池行业进入全球化竞争时代，成本在锂电产业链各环节中重要性更加凸出，细分领域一体化是获得成本优势的有效途径；另一方面，石墨化成本占比高，人造石墨负极材料加工成本中，石墨化成本占比超过<span class="highlight">45%</span>，且石墨化工序对人造石墨产品品质控制非常关键和重要。</p>
+                        
+                        <div class="mt-4">
+                            <div id="integration-trend" class="w-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 页脚 -->
+        <footer class="mt-12 pt-6 border-t border-gray-200 text-center text-gray-500 text-sm">
+            <p>created by <a href="https://space.coze.cn" class="text-blue-600 hover:underline">coze space</a></p>
+            <p class="mt-1">页面内容均由 AI 生成，仅供参考</p>
+        </footer>
+    </div>
+
+    <script>
+        // 初始化图表
+        document.addEventListener('DOMContentLoaded', function() {
+            // 出货量图表
+            const shipmentCtx = document.getElementById('shipmentChart').getContext('2d');
+            new Chart(shipmentCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['2023', '2024', '2025(预测)'],
+                    datasets: [{
+                        label: '负极材料出货量 (万吨)',
+                        data: [165, 208, 241],
+                        backgroundColor: 'rgba(59, 130, 246, 0.7)',
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '中国负极材料出货量趋势'
+                        }
+                    }
+                }
+            });
+
+            // 市场份额图表
+            const marketShareCtx = document.getElementById('marketShareChart').getContext('2d');
+            new Chart(marketShareCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['贝特瑞', '杉杉股份', '璞泰来', '中晟新材', '天目先导', '其他'],
+                    datasets: [{
+                        data: [25, 20, 18, 12, 10, 15],
+                        backgroundColor: [
+                            'rgba(59, 130, 246, 0.7)',
+                            'rgba(16, 185, 129, 0.7)',
+                            'rgba(245, 158, 11, 0.7)',
+                            'rgba(139, 92, 246, 0.7)',
+                            'rgba(236, 72, 153, 0.7)',
+                            'rgba(156, 163, 175, 0.7)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '2024年中国负极材料主要企业市场份额(%)'
+                        }
+                    }
+                }
+            });
+
+            // 应用领域图表
+            const applicationCtx = document.getElementById('applicationChart').getContext('2d');
+            new Chart(applicationCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2020', '2021', '2022', '2023', '2024', '2025(预测)'],
+                    datasets: [
+                        {
+                            label: '消费电子',
+                            data: [65, 60, 55, 45, 38, 30],
+                            borderColor: 'rgba(156, 163, 175, 1)',
+                            backgroundColor: 'rgba(156, 163, 175, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.3
+                        },
+                        {
+                            label: '新能源汽车',
+                            data: [20, 25, 35, 42, 48, 52],
+                            borderColor: 'rgba(16, 185, 129, 1)',
+                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.3
+                        },
+                        {
+                            label: '储能系统',
+                            data: [15, 15, 10, 13, 14, 18],
+                            borderColor: 'rgba(59, 130, 246, 1)',
+                            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.3
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '负极材料应用领域变化趋势(%)'
+                        }
+                    }
+                }
+            });
+
+            // 技术趋势图
+            const techTrendDefinition = `
+            graph LR
+                A[硅基负极] --> B[纳米硅技术]
+                A --> C[硅碳复合材料]
+                B --> D[缓解体积膨胀]
+                C --> D
+                D --> E[提升循环稳定性]
+                F[生产工艺优化] --> G[改进石墨化工艺]
+                G --> H[降低生产成本]
+                G --> I[提升产品一致性]
+            `;
+            
+            mermaid.mermaidAPI.render('tech-trend', techTrendDefinition, (svgCode) => {
+                document.getElementById('tech-trend').innerHTML = svgCode;
+            });
+
+            // 回收流程图
+            const recycleProcessDefinition = `
+            flowchart LR
+                A[废旧锂电池] --> B[拆解分类]
+                B --> C[负极材料回收]
+                C --> D[物理处理]
+                C --> E[化学处理]
+                D --> F[再生石墨]
+                E --> F
+                F --> G[新负极材料生产]
+                G --> H[降低生产成本]
+                G --> I[减少资源浪费]
+            `;
+            
+            mermaid.mermaidAPI.render('recycle-process', recycleProcessDefinition, (svgCode) => {
+                document.getElementById('recycle-process').innerHTML = svgCode;
+            });
+
+            // 一体化趋势图
+            const integrationTrendDefinition = `
+            flowchart LR
+                A[原材料采购] --> B[石墨化加工]
+                B --> C[负极材料生产]
+                C --> D[产品检测]
+                D --> E[销售]
+                F[委外加工] -->|高成本| B
+                G[一体化布局] -->|降低成本| B
+                G -->|品质控制| B
+            `;
+            
+            mermaid.mermaidAPI.render('integration-trend', integrationTrendDefinition, (svgCode) => {
+                document.getElementById('integration-trend').innerHTML = svgCode;
+            });
+        });
+    </script>
+</body>
+</html>
