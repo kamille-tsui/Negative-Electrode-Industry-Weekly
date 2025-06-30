@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年6月23-29日新能源负极材料新闻（按时间排序）</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+            color: #333;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px 20px;
+            background: linear-gradient(to right, #0f4c75, #3282b8);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(15, 76, 117, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(30deg);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 15px;
+        }
+        
+        .sort-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .sort-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+        
+        .sort-btn:hover, .sort-btn.active {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .filter-bar {
+            background: white;
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .date-range {
+            font-weight: 600;
+            color: #0f4c75;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .news-count {
+            background: #0f4c75;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        .timeline {
+            position: relative;
+            margin: 40px 0;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: linear-gradient(to bottom, #3282b8, #bbe1fa);
+            border-radius: 3px;
+            z-index: 1;
+        }
+        
+        .timeline-day {
+            position: relative;
+            margin-bottom: 40px;
+            z-index: 2;
+        }
+        
+        .day-header {
+            background: linear-gradient(to right, #0f4c75, #3282b8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(15, 76, 117, 0.3);
+            position: relative;
+            left: -35px;
+        }
+        
+        .day-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-left: 20px;
+        }
+        
+        .news-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            border-left: 4px solid #3282b8;
+            position: relative;
+        }
+        
+        .news-card::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 20px;
+            width: 16px;
+            height: 16px;
+            background: #3282b8;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #3282b8;
+            z-index: 2;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .card-header {
+            padding: 20px 20px 15px;
+            position: relative;
+        }
+        
+        .news-icon {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #0f4c75;
+        }
+        
+        .news-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #0f4c75;
+            line-height: 1.4;
+        }
+        
+        .news-time {
+            color: #3282b8;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .card-content {
+            padding: 0 20px 20px;
+            flex-grow: 1;
+        }
+        
+        .news-summary {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        .news-link {
+            display: inline-block;
+            background: linear-gradient(to right, #0f4c75, #3282b8);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .news-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+            transition: all 0.6s;
+        }
+        
+        .news-link:hover {
+            background: linear-gradient(to right, #0d3c60, #2a73a8);
+            box-shadow: 0 5px 15px rgba(15, 76, 117, 0.3);
+        }
+        
+        .news-link:hover::before {
+            left: 100%;
+        }
+        
+        .news-link i {
+            margin-left: 8px;
+            font-size: 0.8rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 25px;
+            color: #666;
+            font-size: 0.95rem;
+            border-top: 1px solid rgba(187, 225, 250, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .filter-bar {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+            
+            .timeline {
+                padding-left: 20px;
+            }
+            
+            .news-card::before {
+                left: -22px;
+            }
+            
+            .day-header {
+                left: -25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>新能源负极材料新闻时间线</h1>
+            <p class="subtitle">2025年6月23日 - 6月29日行业动态</p>
+            <div class="sort-controls">
+                <button class="sort-btn active" id="sort-newest">最新优先</button>
+                <button class="sort-btn" id="sort-oldest">最早优先</button>
+            </div>
+        </header>
+        
+        <div class="filter-bar">
+            <div class="date-range">
+                <i class="fas fa-calendar-alt"></i> 日期范围: 2025-06-23 至 2025-06-29
+            </div>
+            <div class="news-count">
+                <i class="fas fa-newspaper"></i> 共12条新闻
+            </div>
+        </div>
+        
+        <!-- 时间线布局 -->
+        <div class="timeline" id="news-timeline">
+            <!-- 6月29日 -->
+            <div class="timeline-day" data-date="2025-06-29">
+                <div class="day-header">
+                    <div class="day-title">
+                        <i class="fas fa-calendar-day"></i> 2025年6月29日（星期日）
+                    </div>
+                </div>
+                <div class="news-grid">
+                    <!-- 新闻 1 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">🔋</div>
+                            <h3 class="news-title">南京大学研发钛-多酸交联金属超分子聚合物负极界面层</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 上午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">李承辉/金钟团队开发新型金属超分子聚合物（MSP-IPL）作为锂金属电池人工界面层，通过钛-多酸桥接提升锂离子迁移数（tLi⁺=0.607），抑制枝晶生长，使Li||NCM811电池在-20℃循环500次后容量保持率达86.8%。</p>
+                            <a href="http://polymer.cn/sci/kjxw24806.html" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻 2 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">📈</div>
+                            <h3 class="news-title">固态电池大会密集召开预示产业爆发拐点</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 下午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">7月将举办第四届固态电池大会暨硅基负极产创大会等多项会议，政策推动下硫化物固态电池或于2026年率先量产。</p>
+                            <a href="https://caifuhao.eastmoney.com/news/20250629224731576491730" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 6月28日 -->
+            <div class="timeline-day" data-date="2025-06-28">
+                <div class="day-header">
+                    <div class="day-title">
+                        <i class="fas fa-calendar-day"></i> 2025年6月28日（星期六）
+                    </div>
+                </div>
+                <div class="news-grid">
+                    <!-- 新闻 3 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">🔬</div>
+                            <h3 class="news-title">Group14硅基负极实现超3000次循环寿命</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 上午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">美国硅基负极企业Group14宣布，其产品SCC55在应用中实现超1500次循环（部分场景超3000次），兼容LFP、LMFP及高镍体系，已为全球数百万产品提供动力。</p>
+                            <a href="https://finance.sina.com.cn/roll/2025-06-28/doc-infcrwmy2474334.shtml" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻 4 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">🛡️</div>
+                            <h3 class="news-title">正力新能申请负极极片专利抑制锂枝晶生长</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 上午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">正力新能研发含聚氨酯保护层的锂金属负极片，其表面3D结构可适应锂金属体积变化并持续抑制枝晶生长。专利设计通过金属基底表面的凹陷和凸起结构结合弹性聚氨酯层，提升循环稳定性。</p>
+                            <a href="https://m.163.com/dy/article/K35LSN170519QIKK.html" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻 5 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">📉</div>
+                            <h3 class="news-title">负极材料行业出货量增50%但陷价格困局</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 下午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">2024年负极材料出货量达208万吨（同比+26%），但均价下跌23%至1.75万元/吨，行业单吨亏损近3000元。贝特瑞、杉杉等头部企业净利润下滑超30%，二线厂商现逆势突围黑马。</p>
+                            <a href="http://www.itbear.com.cn/html/2025-06/866877.html" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 6月27日 -->
+            <div class="timeline-day" data-date="2025-06-27">
+                <div class="day-header">
+                    <div class="day-title">
+                        <i class="fas fa-calendar-day"></i> 2025年6月27日（星期五）
+                    </div>
+                </div>
+                <div class="news-grid">
+                    <!-- 新闻 6 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">⚡</div>
+                            <h3 class="news-title">杉杉股份新一代超充石墨负极实现兆瓦级闪充</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 上午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">杉杉股份推出搭载功能化包覆层的超充石墨负极，通过优化微观结构增加离子通道，支持"充电5分钟续航400公里"，其6C超充动力负极已批量供应全球头部电池企业。</p>
+                            <a href="http://www.itbear.com.cn/html/2025-06/866156.html" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻 7 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">✈</div>
+                            <h3 class="news-title">湖南久森半固态金属锂负极电池即将量产</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 上午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">久森新能源发布能量密度480Wh/kg的半固态金属锂负极电池，计划率先应用于无人机，并逐步推广至乘用车市场。</p>
+                            <a href="https://news.smm.cn/live/detail/103400283" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻 8 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">🔬</div>
+                            <h3 class="news-title">英联股份研发固态电池锂金属/复合集流体负极一体化材料</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 下午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">英联股份依托蒸镀工艺技术优势，推进锂金属与复合集流体（铝箔/铜箔）的负极一体化材料研发，扩展固态电池应用场景。</p>
+                            <a href="https://xny.mysteel.com/a/25062708/A3269C4C2105E746.html" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻 9 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">🔋</div>
+                            <h3 class="news-title">杉杉股份负极材料专利布局覆盖全球</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 下午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">截至2024年底，杉杉在负极领域拥有334项专利（含8项国际专利），覆盖快充石墨材料设计、界面修饰等核心技术。</p>
+                            <a href="https://www.sohu.com/a/908421366_407695" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 6月25日 -->
+            <div class="timeline-day" data-date="2025-06-25">
+                <div class="day-header">
+                    <div class="day-title">
+                        <i class="fas fa-calendar-day"></i> 2025年6月25日（星期三）
+                    </div>
+                </div>
+                <div class="news-grid">
+                    <!-- 新闻 10 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">🏭</div>
+                            <h3 class="news-title">华盛锂电推进硅碳负极材料产业化</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 上午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">华盛锂电子公司联合武汉大学开发硅碳负极材料，同步建设年产5万吨一期负极项目及LiDFOB、双氟代磺酰亚胺锂等配套产能。</p>
+                            <a href="https://news.smm.cn/live/detail/103394693" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻 11 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">🌍</div>
+                            <h3 class="news-title">宁德新能源申请梯度硅碳负极专利改善循环性能</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 下午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">专利设计硅碳颗粒表面至内部硅元素梯度分布（表面4.04%-16.89%，深层15%-20.88%），抑制析锂并提升安全性与循环寿命。</p>
+                            <a href="https://m.163.com/dy/article/K2TKEUC40519QIKK.html" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 6月24日 -->
+            <div class="timeline-day" data-date="2025-06-24">
+                <div class="day-header">
+                    <div class="day-title">
+                        <i class="fas fa-calendar-day"></i> 2025年6月24日（星期二）
+                    </div>
+                </div>
+                <div class="news-grid">
+                    <!-- 新闻 12 -->
+                    <div class="news-card">
+                        <div class="card-header">
+                            <div class="news-icon">💎</div>
+                            <h3 class="news-title">蓝电新能源申请钛酸锂/竹纤维碳复合负极专利</h3>
+                            <div class="news-time"><i class="far fa-clock"></i> 上午发布</div>
+                        </div>
+                        <div class="card-content">
+                            <p class="news-summary">通过醛基化改性竹纤维与羧酸锂盐键合，原位生成钛酸锂活性物质，降低电荷转移电阻，提升循环稳定性。</p>
+                            <a href="https://m.163.com/dy/article/K2QP10PB0519QIKK.html" class="news-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>新能源负极材料行业动态时间线 &copy; 2025 | 数据更新时间: 2025年6月30日</p>
+            <p id="sort-status">当前排序: 从最新到最旧</p>
+        </div>
+    </div>
+
+    <script>
+        // 修复排序功能
+        document.getElementById('sort-newest').addEventListener('click', function() {
+            this.classList.add('active');
+            document.getElementById('sort-oldest').classList.remove('active');
+            document.getElementById('sort-status').textContent = '当前排序: 从最新到最旧';
+            
+            const timeline = document.getElementById('news-timeline');
+            const days = Array.from(timeline.querySelectorAll('.timeline-day'));
+            
+            // 清除现有内容
+            while (timeline.firstChild) {
+                timeline.removeChild(timeline.firstChild);
+            }
+            
+            // 按日期从新到旧排序
+            days.sort((a, b) => {
+                return new Date(b.dataset.date) - new Date(a.dataset.date);
+            });
+            
+            // 重新添加排序后的内容
+            days.forEach(day => timeline.appendChild(day));
+        });
+        
+        document.getElementById('sort-oldest').addEventListener('click', function() {
+            this.classList.add('active');
+            document.getElementById('sort-newest').classList.remove('active');
+            document.getElementById('sort-status').textContent = '当前排序: 从最早到最新';
+            
+            const timeline = document.getElementById('news-timeline');
+            const days = Array.from(timeline.querySelectorAll('.timeline-day'));
+            
+            // 清除现有内容
+            while (timeline.firstChild) {
+                timeline.removeChild(timeline.firstChild);
+            }
+            
+            // 按日期从旧到新排序
+            days.sort((a, b) => {
+                return new Date(a.dataset.date) - new Date(b.dataset.date);
+            });
+            
+            // 重新添加排序后的内容
+            days.forEach(day => timeline.appendChild(day));
+        });
+        
+        // 卡片悬停动画
+        document.querySelectorAll('.news-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // 页面加载动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.news-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 + index * 100);
+            });
+            
+            // 初始按最新排序
+            document.getElementById('sort-newest').click();
+        });
+    </script>
+</body>
+</html>
