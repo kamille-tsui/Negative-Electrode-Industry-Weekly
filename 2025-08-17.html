@@ -1,189 +1,263 @@
 <!DOCTYPE html>
-<!-- saved from url=(0056)https://aaalexxx666.github.io/weeklynews/2025-08-17.html -->
-<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新能源负极材料新闻（2025.08.11-08.17）</title>
+    <title>新能源负极材料行业一周新闻速递</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; 
-            max-width: 1000px; 
-            margin: 0 auto; 
-            padding: 20px; 
-            line-height: 1.7; 
-            background-color: #f5f7fa; 
-            color: #333;
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
         }
-        header { 
-            text-align: center; 
-            margin-bottom: 40px; 
-            padding: 30px 20px; 
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); 
-            color: white; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        .news-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
         }
-        h1 { 
-            font-size: 2.2rem; 
-            margin-bottom: 10px; 
-            letter-spacing: -0.5px;
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border-left-color: #3b82f6;
         }
-        .subtitle { 
-            font-weight: 300; 
-            opacity: 0.9; 
-            font-size: 1.1rem;
+        .tag {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
         }
-        .news-container { 
-            display: grid; 
-            gap: 25px; 
+        .source-tag {
+            background-color: #e0f2fe;
+            color: #0369a1;
         }
-        .news-card { 
-            background: white; 
-            border-radius: 12px; 
-            padding: 25px; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
-            transition: transform 0.3s ease, box-shadow 0.3s ease; 
-            border-left: 5px solid #3498db;
-        }
-        .news-card:hover { 
-            transform: translateY(-5px); 
-            box-shadow: 0 12px 20px rgba(0,0,0,0.1); 
-        }
-        .news-date { 
-            color: #7f8c8d; 
-            font-size: 0.9rem; 
-            margin-bottom: 10px; 
-            display: inline-block; 
-            padding: 3px 10px; 
-            background-color: #f1f5f9; 
-            border-radius: 20px;
-        }
-        .news-title { 
-            font-size: 1.4rem; 
-            margin-bottom: 15px; 
-            line-height: 1.4;
-        }
-        .news-title a { 
-            color: #2980b9; 
-            text-decoration: none; 
-            transition: color 0.3s ease;
-        }
-        .news-title a:hover { 
-            color: #2c3e50; 
-            text-decoration: underline;
-        }
-        .news-summary { 
-            color: #555; 
-            font-size: 1rem; 
-            line-height: 1.6; 
-            display: -webkit-box; 
-            -webkit-line-clamp: 3; 
-            -webkit-box-orient: vertical; 
-            overflow: hidden;
-        }
-        .footer { 
-            text-align: center; 
-            margin-top: 50px; 
-            color: #7f8c8d; 
-            padding: 20px; 
-            font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-            h1 { font-size: 1.8rem; }
-            .news-card { padding: 20px; }
-            .news-title { font-size: 1.25rem; }
+        .date-badge {
+            background-color: #f0fdf4;
+            color: #166534;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>新能源负极材料新闻动态</h1>
-        <p class="subtitle">2025年8月11日 - 8月17日 | 国内行业最新进展</p>
-    </header>
-    
-    <div class="news-container">
-        <div class="news-card">
-            <span class="news-date">2025-08-15</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7538603564789301811/?upstream_biz=doubao" target="_blank">长沙矿冶研究院取得纳米均质结构硅碳负极材料相关专利</a></h2>
-            <p class="news-summary">国家知识产权局信息显示，长沙矿冶研究院有限责任公司取得一项名为"一种纳米均质结构的硅碳负极材料及其制备方法和应用"的专利，授权公告号CN116404131B，该材料具有优异的结构稳定性和电化学性能。</p>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- 标题区域 -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">新能源负极材料行业一周新闻速递</h1>
+            <div class="inline-block px-4 py-1 rounded-full date-badge">
+                <i class="fas fa-calendar-alt mr-2"></i>2025年8月11日-8月17日
+            </div>
         </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-14</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/75383105619106698249/?upstream_biz=doubao" target="_blank">安徽得壹能源申请纳米硅/石墨碳复合负极材料等专利</a></h2>
-            <p class="news-summary">安徽得壹能源科技有限公司申请"一种纳米硅/石墨碳复合负极材料及其制备方法与电池"专利，通过多孔石墨材料负载纳米硅颗粒，有效提高负极材料结构稳定性，降低体积膨胀效应。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-14</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7538424988836053567/?upstream_biz=doubao" target="_blank">信德新材股价下跌3.59% 公司回应硅碳负极材料研发进展</a></h2>
-            <p class="news-summary">信德新材在投资者互动平台表示，正持续研发应用于硅碳负极的包覆材料，已进行相关研发项目的投入。公司强调主营业务仍聚焦于锂电池负极包覆材料领域，目前不涉及液冷业务。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-13</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7537905487750742580/?upstream_biz=doubao" target="_blank">高艺匠(成都)新材料科技取得低膨胀高比容量硅碳负极复合材料及制备方法专利</a></h2>
-            <p class="news-summary">高艺匠（成都）新材料科技有限公司取得"一种低膨胀、高比容量的硅碳负极复合材料及制备方法"专利，通过创新工艺显著降低材料体积膨胀率，同时提升比容量和循环稳定性。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-12</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7537570732290523674/?upstream_biz=doubao" target="_blank">浙江晶科储能取得锂离子电池用石墨负极材料相关专利</a></h2>
-            <p class="news-summary">浙江晶科储能有限公司取得"锂离子电池用石墨负极材料的制备方法、锂离子电池及储能装置和用电设备"专利，优化石墨化工艺，提升材料导电性和充放电效率，适用于储能电池领域。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-12</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7537578462106698249/?upstream_biz=doubao" target="_blank">中绿中科锂电容申请含碳金属氧化物负极材料专利</a></h2>
-            <p class="news-summary">北京中绿中科锂电容科技有限公司申请"一种含碳金属氧化物负极材料、其制备方法与锂离子电容器"专利，使用纳米结构的金属有机框架材料为前驱体，提升锂离子电容器的能量密度。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-12</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7537501889010516522/?upstream_biz=doubao" target="_blank">山东高登赛申请复合负极材料等相关专利</a></h2>
-            <p class="news-summary">山东高登赛固态电池有限公司申请"复合负极材料、负极片和钠离子电池"专利，采用大颗粒硬碳与小颗粒碳材料混合颗粒结构，充放电过程中极化更小，提升电池循环性能。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-12</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7537524350321312282/?upstream_biz=doubao" target="_blank">贝特瑞等取得负极材料及其制备方法、锂离子电池相关专利</a></h2>
-            <p class="news-summary">贝特瑞新材料集团股份有限公司、惠州市鼎元新能源科技有限公司取得负极材料相关专利，通过创新制备工艺提升材料性能，适用于高能量密度锂离子电池。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-11</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7536136739396665856/?upstream_biz=doubao" target="_blank">三孔交织，硅碳共舞—欣荣锂电突破硅负极膨胀困局</a></h2>
-            <p class="news-summary">欣荣锂电通过创新多孔结构设计和硅碳复合技术，有效解决硅负极材料体积膨胀难题，提升电池循环稳定性和能量密度，为高容量锂电池研发提供新方向。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-11</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7536539410611946024/?upstream_biz=doubao" target="_blank">中科海钠等申请煤基硬碳负极材料及其制备方法和应用专利</a></h2>
-            <p class="news-summary">溧阳中科海钠科技有限责任公司、山西华钠碳能科技有限责任公司申请煤基硬碳负极材料专利，实现煤炭的高价值转化，为钠离子电池提供高性能负极材料解决方案。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-12</span>
-            <h2 class="news-title"><a href="https://wap.stockstar.com/detail/RB2025080900002687" target="_blank">贝特瑞获得发明专利授权:“负极材料及其制备方法、锂离子电池”</a></h2>
-            <p class="news-summary">贝特瑞新材料集团股份有限公司获得发明专利授权，该专利涉及一种高性能负极材料及其制备方法，可有效提升锂离子电池的循环性能和能量密度。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-12</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7536387866272776750/?upstream_biz=doubao" target="_blank">诚一新能源申请纳米硅碳负极材料生产装置及方法专利</a></h2>
-            <p class="news-summary">诚一新能源申请纳米硅碳负极材料生产装置及方法专利，通过创新工艺设计避免局部混合气体浓度过高或过低，提高生产安全性和产品一致性。</p>
-        </div>
-        
-        <div class="news-card">
-            <span class="news-date">2025-08-13</span>
-            <h2 class="news-title"><a href="http://m.toutiao.com/group/7536150546730975795/?upstream_biz=doubao" target="_blank">聚鑫新能源等申请一种多孔硅/碳复合负极材料及其制备方法和应用专利</a></h2>
-            <p class="news-summary">湛江市聚鑫新能源有限公司、广东东岛新能源股份有限公司申请多孔硅/碳复合负极材料专利，具备空间立体三维网络导电通道结构，提高电池的循环性能和倍率性能。</p>
-        </div>
-    </div>
-    
-    <div class="footer">
-        <p>数据来源：公开专利信息及行业新闻 | 更新时间：2025年8月18日</p>
-    </div>
 
-</body></html>
+        <!-- 新闻列表 -->
+        <div class="space-y-6">
+            <!-- 新闻1 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">1</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">世界首个万吨级硅碳负极项目即将量产</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>中国化工信息周刊网</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">内蒙古硅源新能电子材料科技有限公司投建的全球首个万吨级硅碳负极项目进入试生产阶段，采用清华大学硫化床包裹技术，能量密度提升20%-30%。项目总投资30亿元，分三期建设，全面达产后预计年销售收入40-60亿元。</p>
+                        <a href="https://www.chemnews.com.cn/c/2025-08-04/762281.shtml" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻2 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">2</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">锂电负极行业首份半年报出炉，翔丰华毛利率下降6个百分点</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>华夏时报</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">翔丰华2025年上半年营收6.88亿元（同比-2.8%），归母净利润亏损294.59万元，毛利率降至12.35%。行业产能过剩加剧竞争，头部企业凭借规模优势维持盈利韧性，中小厂商陷入成本压力。</p>
+                        <a href="http://m.toutiao.com/group/7534004608901857855/?upstream_biz=doubao" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻3 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">3</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">2025年中国负极材料企业发展潜力排名发布</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>中商产业研究院</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">贝特瑞、杉杉股份、璞泰来位列前三，硅基负极（CVD路线）进入规模化应用元年。技术壁垒、降本效率与出海速度成为企业分化关键，人造石墨渗透率突破92%，硬碳负极在钠电池领域增速显著。</p>
+                        <a href="http://m.toutiao.com/group/7537608303421981224/?upstream_biz=doubao" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻4 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">4</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">贝特瑞发布S+i石墨长续航负极方案，破解硅基应用瓶颈</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>中国能源报</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">贝特瑞推出行业首创BTR S+i石墨方案，通过材料协同解决硅基负极锂串扰、分散不均及热稳定性问题，电池寿命提升20%，存储性能提升超25%。其CVD硅碳负极已导入国际头部客户。</p>
+                        <a href="http://m.toutiao.com/group/7527912287162155535/?upstream_biz=doubao" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻5 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">5</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">Talga推出回收石墨负极产品Talnode-R，循环利用电池废料</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>Electronics Media</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">瑞典企业Talga利用电池生产废料和退役电池回收石墨，通过湿法冶金技术提纯至99.95%纯度，性能媲美新制人造石墨，计划在欧洲建设模块化生产基地，适配本地化供应链。</p>
+                        <a href="https://www.electronicsmedia.info/2025/08/13/talnode-r-recycled-graphite-anode/" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻6 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">6</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">锂电负极材料价格企稳，硅基负极成本下降30%</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>小牛行研</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">7月人造石墨负极价格企稳，CVD硅碳负极量产成本降至15万元/吨（同比-30%），储能领域需求超预期拉动天然石墨出货。负极用焦价格回落至3800元/吨，缓解企业成本压力。</p>
+                        <a href="https://www.hangyan.co/charts/3691497363714606546" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻7 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">7</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">远景动力申请干法负极极片专利，抑制硅材料膨胀</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>金融界</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">远景动力开发干法负极极片技术，通过优化粘结剂均匀度（85%-96%）抑制硅材料体积膨胀，提升电池安全性能。专利涉及硅基材料与导电剂协同设计，适配半固态电池体系。</p>
+                        <a href="http://m.toutiao.com/group/7538699432116683300/?upstream_biz=doubao" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻8 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">8</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">比亚迪申请负极片钝化膜专利，提升循环稳定性</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>金融界</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">比亚迪研发含氟化锂、碳酸锂及PVDF骨架的钝化膜，填充于负极表面孔隙，电池循环稳定性提升15%，内阻增长率降低20%，适配高端动力电池需求。</p>
+                        <a href="http://m.toutiao.com/group/7537498052261675558/?upstream_biz=doubao" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻9 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">9</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">2025H1中国负极材料出货量126.9万吨，人造石墨占比91.6%</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>起点锂电</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">贝特瑞、杉杉股份、中科星城位列出货量前三，人造石墨因循环性能优势持续替代天然石墨。硅基负极出货量同比增长120%，CVD工艺占比提升至60%。</p>
+                        <a href="http://m.toutiao.com/group/7534905359677293091/?upstream_biz=doubao" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻10 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">10</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">钠电池硬碳负极成本直降30%，生物质路线成主流</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>博思数据</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">椰壳生物质硬碳负极量产良率提升至70%，成本降至1.2万元/吨（同比-30%），2025年储能领域渗透率或达15%。汉行科技、华阳集团加速布局，中科海钠煤基负极基地投产。</p>
+                        <a href="http://m.toutiao.com/group/7538263920813900330/?upstream_biz=doubao" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻11 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">11</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">Prebaked anode prices adjusted in August，原料涨价支撑价格上行</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>Alcircle</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">8月预焙阳极价格因低硫焦、煤焦油沥青涨价支撑上调，东北亚低硫焦价格达3877元/吨（月涨5.7%），铝厂采购价稳定在4739元/吨，成本传导效应显现。</p>
+                        <a href="https://www.alcircle.com/news/prebaked-anode-prices-adjusted-in-august-rising-raw-material-prices-support-expectations-of-stable-and-upward-price-movement-115046" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻12 -->
+            <div class="bg-white rounded-lg shadow-md p-6 news-card">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-4 text-blue-500 text-xl">12</div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-2">超碳先烽硅碳负极专利：循环100周容量保持率超90%</h2>
+                        <div class="flex items-center mb-3">
+                            <span class="tag source-tag mr-2"><i class="fas fa-newspaper mr-1"></i>金融界</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">江苏超碳先烽开发碳纳米管薄膜负载硅基材料，通过介孔结构缓冲膨胀，0.5C循环100周容量保持率90%，首效近90%，适配高能量密度动力电池。</p>
+                        <a href="http://m.toutiao.com/group/7536492989850452521/?upstream_biz=doubao" target="_blank" class="text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <i class="fas fa-external-link-alt mr-1"></i>阅读原文
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="mt-16 text-center text-gray-500 text-sm">
+            <p>created by <a href="https://space.coze.cn" class="text-blue-500 hover:text-blue-700">coze space</a></p>
+            <p class="mt-1">页面内容均由 AI 生成，仅供参考</p>
+        </footer>
+    </div>
+</body>
+</html>
