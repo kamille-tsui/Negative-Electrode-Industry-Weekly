@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新能源负极材料行业一周新闻速递</title>
+    <title>新能源负极材料行业一周新闻速递（2025年8月25日-8月31日）</title>
     <script src="https://cdn.tailwindcss.com/3.3.3"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
@@ -11,283 +11,277 @@
             font-family: 'Noto Sans SC', sans-serif;
             background-color: #f8fafc;
             color: #1e293b;
+            line-height: 1.6;
         }
         .news-card {
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 0.5rem;
+            overflow: hidden;
         }
         .news-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
-        .link-hover:hover {
-            color: #3b82f6;
-            text-decoration: underline;
-        }
         .date-badge {
-            background-color: #e0f2fe;
-            color: #0369a1;
+            font-size: 0.75rem;
+            background-color: #e2e8f0;
+            color: #475569;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+        .link-icon {
+            transition: all 0.2s ease;
         }
-        .animate-fade-in {
-            animation: fadeIn 0.5s ease-out forwards;
+        .link-icon:hover {
+            color: #3b82f6;
+            transform: scale(1.1);
+        }
+        .highlight {
+            background-color: rgba(59, 130, 246, 0.1);
+            padding: 0.125rem 0.25rem;
+            border-radius: 0.25rem;
+        }
+        @media (max-width: 640px) {
+            .news-title {
+                font-size: 1.125rem;
+            }
+            .news-summary {
+                font-size: 0.875rem;
+            }
         }
     </style>
 </head>
-<body class="min-h-screen bg-gray-50">
-    <div class="container mx-auto px-4 py-8 max-w-6xl">
-        <!-- 标题区域 -->
-        <div class="text-center mb-12">
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- 标题部分 -->
+        <div class="text-center mb-10">
             <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">新能源负极材料行业一周新闻速递</h1>
-            <div class="text-xl text-gray-600">2025年8月25日-8月31日</div>
+            <p class="text-lg text-gray-600">2025年8月25日-8月31日</p>
+            <div class="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
         <!-- 新闻列表 -->
         <div class="space-y-6">
             <!-- 新闻1 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 0.1s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-28</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">璞泰来上半年营收70.88亿元，硅碳负极芜湖项目9月量产</h3>
-                        <p class="text-gray-600 mb-3">璞泰来上半年净利润10.55亿元（同比+23%），芜湖1.2万吨硅基负极项目进入设备调试阶段，理论容量较传统石墨提升10倍，瞄准特斯拉4680电池需求。</p>
-                        <a href="https://cj.sina.cn/article/norm_detail?url=https%3A%2F%2Ffinance.sina.com.cn%2Froll%2F2025-08-28%2Fdoc-infnpcem8347769.shtml" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">璞泰来上半年营收70.88亿元，硅碳负极芜湖项目9月量产</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-28</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">璞泰来上半年净利润10.55亿元（同比+23%），芜湖1.2万吨硅基负极项目进入设备调试阶段，理论容量较传统石墨提升10倍，瞄准特斯拉4680电池需求。</p>
+                <a href="https://cj.sina.cn/article/norm_detail?url=https%3A%2F%2Ffinance.sina.com.cn%2Froll%2F2025-08-28%2Fdoc-infnpcem8347769.shtml" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻2 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 0.2s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-31</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">天然石墨价格维稳，高端人造石墨需求攀升</h3>
-                        <p class="text-gray-600 mb-3">本周天然石墨（低端）价格持平2.25万元/吨，高端人造石墨因储能电池需求增长，价格环比上涨2%，中科电气、尚太科技等头部企业产能利用率超90%。</p>
-                        <a href="https://m.10jqka.com.cn/20250831/c670780307.shtml" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">天然石墨价格维稳，高端人造石墨需求攀升</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-31</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">本周天然石墨（低端）价格持平2.25万元/吨，高端人造石墨因储能电池需求增长，价格环比上涨2%，中科电气、尚太科技等头部企业产能利用率超90%。</p>
+                <a href="https://m.10jqka.com.cn/20250831/c670780307.shtml" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻3 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 0.3s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-26</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">尚太科技攻克硅碳传输瓶颈，新专利提升动力学性能</h3>
-                        <p class="text-gray-600 mb-3">尚太科技以碳纳米管为晶种，通过硅碳共沉积制备复合材料，消除纳米级孔隙，放电末端电压跳水问题彻底解决，适配宁德时代麒麟电池。</p>
-                        <a href="http://m.toutiao.com/group/7542459364674634274/?upstream_biz=doubao" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">尚太科技攻克硅碳传输瓶颈，新专利提升动力学性能</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-26</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">尚太科技以碳纳米管为晶种，通过硅碳共沉积制备复合材料，消除纳米级孔隙，放电末端电压跳水问题彻底解决，适配宁德时代麒麟电池。</p>
+                <a href="http://m.toutiao.com/group/7542459364674634274/?upstream_biz=doubao" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻4 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 0.4s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-26</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">五矿石墨实现高端石墨产品规模化生产</h3>
-                        <p class="text-gray-600 mb-3">五矿石墨攻克核级石墨、超高纯石墨制备技术，建成国内首条万吨级天然石墨负极材料产线，产品适配比亚迪海豹车型，打破海外垄断。</p>
-                        <a href="http://m.toutiao.com/group/7542885803756732937/?upstream_biz=doubao" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">五矿石墨实现高端天然石墨规模化生产</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-26</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">五矿石墨攻克核级石墨、超高纯石墨制备技术，建成国内首条万吨级天然石墨负极材料产线，产品适配比亚迪海豹车型，打破海外垄断。</p>
+                <a href="http://m.toutiao.com/group/7542885803756732937/?upstream_biz=doubao" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻5 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 0.5s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-25</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">赣锋锂电优化硅基软包电池化成工艺</h3>
-                        <p class="text-gray-600 mb-3">赣锋锂电通过预压-分段充放电工艺，硅基电池首效提升4.5%-12.8%，内阻降低17.9%-37.8%，适配无人机高倍率场景。</p>
-                        <a href="http://m.toutiao.com/group/7541389801656828458/?upstream_biz=doubao" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">赣锋锂电优化硅基软包电池化成工艺</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-25</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">赣锋锂电通过预压-分段充放电工艺，硅基电池首效提升4.5%-12.8%，内阻降低17.9%-37.8%，适配无人机高倍率场景。</p>
+                <a href="http://m.toutiao.com/group/7541389801656828458/?upstream_biz=doubao" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻6 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 0.6s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-26</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">正望新材料3万吨石墨负极项目10月投产</h3>
-                        <p class="text-gray-600 mb-3">正望新材料内江基地3万吨石墨负极产线进入设备安装阶段，二期规划硅碳负极产能，采用CVD法工艺，目标客户包括亿纬锂能、瑞浦兰钧。</p>
-                        <a href="http://www.icbattery.com/wap/index.php?itemid=61279&moduleid=21" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">正望新材料3万吨石墨负极项目10月投产</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-26</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">正望新材料内江基地3万吨石墨负极产线进入设备安装阶段，二期规划硅碳负极产能，采用CVD法工艺，目标客户包括亿纬锂能、瑞浦兰钧。</p>
+                <a href="http://www.icbattery.com/wap/index.php?itemid=61279&moduleid=21" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻7 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 0.7s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-25</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">长安汽车申请硅碳负极专利，提升倍率性能</h3>
-                        <p class="text-gray-600 mb-3">长安汽车开发聚合物电解质浸润硅碳活性材料工艺，构建快速离子传输通道，电池容量发挥及倍率性能提升显著，适配800V高压平台。</p>
-                        <a href="http://m.toutiao.com/group/7542314450225742376/?upstream_biz=doubao" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">楚能新能源与杉杉科技签署百亿级负极材料采购协议</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-25</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">楚能新能源与杉杉科技达成超百亿元采购合作，聚焦动力电池快充负极及储能长循环材料开发，杉杉科技将保障年供应10万吨高端石墨负极。</p>
+                <a href="http://m.toutiao.com/group/7538809170976457235/?upstream_biz=doubao" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻8 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 0.8s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-30</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">全球硅基负极市场冲刺300亿，中国产能占比90%</h3>
-                        <p class="text-gray-600 mb-3">2025年全球硅基负极市场规模将达300亿元，中国CVD法硅碳产能占比超90%，天目先导、兰溪致德等企业出货量均突破300吨。</p>
-                        <a href="https://m.sohu.com/a/929915135_122263067" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">全球硅基负极市场冲刺300亿，中国产能占比90%</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-30</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">2025年全球硅基负极市场规模将达300亿元，中国CVD法硅碳产能占比超90%，天目先导、兰溪致德等企业出货量均突破300吨。</p>
+                <a href="https://m.sohu.com/a/929915135_122263067" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻9 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 0.9s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-30</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">杉杉股份上半年净利润增1079%，硅氧产品批量装车</h3>
-                        <p class="text-gray-600 mb-3">杉杉股份上半年净利润2.07亿元（同比+1079%），第二代硅氧材料通过海外头部客户验证，宁波基地硅碳产能利用率达85%。</p>
-                        <a href="http://finance.sina.cn/2025-08-30/detail-infnusvw4549387.d.html" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">杉杉股份上半年净利润增1079%，硅氧产品批量装车</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-30</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">杉杉股份上半年净利润2.07亿元（同比+1079%），第二代硅氧材料通过海外头部客户验证，宁波基地硅碳产能利用率达85%。</p>
+                <a href="http://finance.sina.cn/2025-08-30/detail-infnusvw4549387.d.html" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻10 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 1.0s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-26</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">浙江卡波恩投建5000吨竹基硬碳项目</h3>
-                        <p class="text-gray-600 mb-3">浙江卡波恩投资1.01亿元建设竹基硬碳产线，采用等离子体酸洗技术，产品首效91%，可逆容量300mAh/g，2026年12月投产。</p>
-                        <a href="https://m.tanhei.com/news/enterprise/202508/45228.html" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">浙江卡波恩投建5000吨竹基硬碳项目</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-26</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">浙江卡波恩投资1.01亿元建设竹基硬碳产线，采用等离子体酸洗技术，产品首效91%，可逆容量300mAh/g，2026年12月投产。</p>
+                <a href="https://m.tanhei.com/news/enterprise/202508/45228.html" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻11 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 1.1s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-27</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">易成新能负极材料项目全面投产，青海基地扭亏为盈</h3>
-                        <p class="text-gray-600 mb-3">易成新能南阳天成、青海天蓝二期项目达产，负极材料收入同比增长65%，青海基地实现净利润8900万元，受益于光伏储能需求爆发。</p>
-                        <a href="https://cj.sina.cn/article/norm_detail?url=https%3A%2F%2Ffinance.sina.cn%2Froll%2F2025-08-27%2Fdoc-infnktxh0768565.shtml" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">易成新能负极材料项目全面投产，青海基地扭亏为盈</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-27</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">易成新能南阳天成、青海天蓝二期项目达产，负极材料收入同比增长65%，青海基地实现净利润8900万元，受益于光伏储能需求爆发。</p>
+                <a href="https://cj.sina.cn/article/norm_detail?url=https%3A%2F%2Ffinance.sina.cn%2Froll%2F2025-08-27%2Fdoc-infnktxh0768565.shtml" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻12 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 1.2s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-25</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Group14完成4.63亿美元融资，德国基地年产1.5万吨硅碳负极</h3>
-                        <p class="text-gray-600 mb-3">美国Group14获SK、保时捷投资，收购韩国合资工厂，CVD硅碳产品适配宝马固态电池，能量密度突破400Wh/kg。</p>
-                        <a href="https://m.sohu.com/a/929915135_122263067" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">Group14完成4.63亿美元融资，德国基地年产1.5万吨硅碳负极</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-26</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">美国Group14获SK、保时捷投资，收购韩国合资工厂，CVD硅碳产品适配宝马固态电池，能量密度突破400Wh/kg。</p>
+                <a href="https://m.sohu.com/a/929915135_122263067" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻13 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 1.3s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-25</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">广东东岛新能源连续碳化装置专利</h3>
-                        <p class="text-gray-600 mb-3">广东东岛开发三级加热连续碳化装置，物料依次经过三个温度区间，碳化效率提升30%，适配大规模硅碳负极量产。</p>
-                        <a href="http://m.toutiao.com/group/7542394030378844691/?upstream_biz=doubao" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">负极针状焦价格环比上涨5%，石墨电极成本压力升温</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-28</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">8月负极用针状焦价格环比上涨5%至8200元/吨，受原料石油焦价格攀升及下游石墨电极需求回暖推动，方大炭素、中科电气等企业上调报价。</p>
+                <a href="https://m.csai.cn/yuqing/885781/2231726.html" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻14 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 1.4s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-26</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">负极材料行业CR5集中度提升至74%</h3>
-                        <p class="text-gray-600 mb-3">2025年上半年负极材料出货129万吨（同比+37%），贝特瑞、杉杉股份等头部企业通过技术迭代抢占市场，中小厂商产能出清加速。</p>
-                        <a href="https://www.oilchem.net/25-0821-16-6b4cf684c38a0203.html" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">负极材料行业CR5集中度提升至74%</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-26</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">2025年上半年负极材料出货129万吨（同比+37%），贝特瑞、杉杉股份等头部企业通过技术迭代抢占市场，中小厂商产能出清加速。</p>
+                <a href="https://www.oilchem.net/25-0821-16-6b4cf684c38a0203.html" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
 
             <!-- 新闻15 -->
-            <div class="news-card bg-white rounded-lg p-6 animate-fade-in" style="animation-delay: 1.5s;">
-                <div class="flex items-start">
-                    <div class="date-badge text-sm font-medium px-3 py-1 rounded-full mr-4">2025-08-27</div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">内蒙古斯诺新材料硬碳负极专利</h3>
-                        <p class="text-gray-600 mb-3">内蒙古斯诺开发多孔硬碳/软碳复合负极，孔隙率46%-63%，钠电可逆容量380mAh/g，循环寿命突破3000次。</p>
-                        <a href="http://m.toutiao.com/group/7541626327116317247/?upstream_biz=doubao" 
-                           class="text-blue-500 link-hover inline-flex items-center" target="_blank">
-                            <i class="fas fa-external-link-alt mr-1"></i> 阅读原文
-                        </a>
-                    </div>
+            <div class="news-card bg-white p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 class="news-title text-xl font-semibold text-gray-800">尚太科技马来西亚5万吨负极项目启动建设</h2>
+                    <span class="date-badge px-2 py-1 rounded">2025-08-29</span>
                 </div>
+                <p class="news-summary text-gray-600 mb-4">尚太科技马来西亚年产5万吨负极材料项目开工，总投资12亿元，采用连续石墨化工艺，产品瞄准东南亚动力电池市场，预计2026年Q4投产。</p>
+                <a href="https://mobile.aigupiao.com/lives/usermsg/id/5112727" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt link-icon mr-1"></i>
+                    <span>阅读原文</span>
+                </a>
             </div>
         </div>
 
         <!-- 页脚 -->
-        <footer class="mt-16 text-center text-gray-500 text-sm">
-            <div class="mb-4">
-                <a href="https://space.coze.cn" class="text-blue-500 hover:text-blue-700" target="_blank">created by coze space</a>
-            </div>
-            <div>页面内容均由 AI 生成，仅供参考</div>
+        <footer class="mt-16 pt-6 border-t border-gray-200 text-center text-gray-500 text-sm">
+            <p>页面内容均由 AI 生成，仅供参考</p>
+            <p class="mt-1">created by <a href="https://space.coze.cn" target="_blank" class="text-blue-500 hover:text-blue-700">coze space</a></p>
         </footer>
     </div>
 
     <script>
-        // 简单的滚动动画效果
-        document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.animate-fade-in');
-            cards.forEach((card, index) => {
-                card.style.animationDelay = `${index * 0.1}s`;
+        // 平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 为新闻卡片添加悬停效果
+        const newsCards = document.querySelectorAll('.news-card');
+        newsCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('shadow-md');
+            });
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('shadow-md');
             });
         });
     </script>
