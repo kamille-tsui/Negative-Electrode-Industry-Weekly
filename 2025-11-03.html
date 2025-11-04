@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年10月27日-11月2日新能源负极材料行业新闻速递</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .keyword {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .keyword:hover, .keyword.active {
+            background-color: #0ea5e9;
+            color: white;
+        }
+        .news-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-left-color: #3b82f6;
+        }
+        .category-title {
+            position: relative;
+            padding-left: 1rem;
+        }
+        .category-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #3b82f6;
+            border-radius: 2px;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+            transform: translateY(-2px);
+        }
+        .nav-link.active {
+            color: #3b82f6;
+            border-bottom: 2px solid #3b82f6;
+        }
+        .pagination-item {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.375rem;
+            transition: all 0.2s ease;
+        }
+        .pagination-item:hover {
+            background-color: #e0f2fe;
+            color: #0369a1;
+        }
+        .pagination-item.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        @media (max-width: 640px) {
+            .news-card {
+                padding: 1rem;
+            }
+            .mobile-hidden {
+                display: none;
+            }
+            .filter-sidebar {
+                display: none;
+            }
+        }
+        @media (min-width: 641px) {
+            .mobile-filter-toggle {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-7xl">
+        <!-- 标题区域 -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">2025年10月27日-11月2日新能源负极材料行业新闻速递</h1>
+            <div class="text-lg text-gray-600">行业动态 · 企业扩产 · 技术突破 · 价格走势</div>
+        </div>
+
+        <!-- 移动端筛选按钮 -->
+        <div class="mobile-filter-toggle mb-4 text-center">
+            <button id="filterToggle" class="bg-blue-50 hover:bg-blue-100 text-blue-600 font-medium py-2 px-4 rounded-lg transition-colors">
+                <i class="fas fa-filter mr-2"></i>筛选关键词
+            </button>
+        </div>
+
+        <!-- 主要内容区域 -->
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- 左侧关键词筛选栏 -->
+            <div id="filterSidebar" class="filter-sidebar md:w-64 bg-white rounded-lg shadow-sm p-6 h-fit sticky top-4">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">关键词筛选</h3>
+                <div class="flex flex-wrap">
+                    <span class="keyword" data-keyword="出口管制">出口管制</span>
+                    <span class="keyword" data-keyword="产业链重构">产业链重构</span>
+                    <span class="keyword" data-keyword="海外布局">海外布局</span>
+                    <span class="keyword" data-keyword="价格动态">价格动态</span>
+                    <span class="keyword" data-keyword="成本传导">成本传导</span>
+                    <span class="keyword" data-keyword="产能利用率">产能利用率</span>
+                    <span class="keyword" data-keyword="海外扩产">海外扩产</span>
+                    <span class="keyword" data-keyword="成本上升">成本上升</span>
+                    <span class="keyword" data-keyword="产能规划">产能规划</span>
+                    <span class="keyword" data-keyword="硅碳技术">硅碳技术</span>
+                    <span class="keyword" data-keyword="客户验证">客户验证</span>
+                    <span class="keyword" data-keyword="量产规划">量产规划</span>
+                    <span class="keyword" data-keyword="钠电硬碳">钠电硬碳</span>
+                    <span class="keyword" data-keyword="专利技术">专利技术</span>
+                    <span class="keyword" data-keyword="储能应用">储能应用</span>
+                    <span class="keyword" data-keyword="硅碳量产">硅碳量产</span>
+                    <span class="keyword" data-keyword="海外客户">海外客户</span>
+                    <span class="keyword" data-keyword="产能释放">产能释放</span>
+                    <span class="keyword" data-keyword="天然石墨">天然石墨</span>
+                    <span class="keyword" data-keyword="区域价差">区域价差</span>
+                    <span class="keyword" data-keyword="出口数据">出口数据</span>
+                    <span class="keyword" data-keyword="工程招标">工程招标</span>
+                    <span class="keyword" data-keyword="成本优势">成本优势</span>
+                </div>
+                <div class="mt-6">
+                    <button id="clearFilter" class="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 px-4 rounded-lg transition-colors">
+                        清除筛选
+                    </button>
+                </div>
+            </div>
+
+            <!-- 右侧内容区域 -->
+            <div class="flex-1">
+                <!-- 导航栏 -->
+                <div class="bg-white rounded-lg shadow-sm p-4 mb-8 sticky top-4 z-10">
+                    <div class="flex flex-wrap justify-between items-center">
+                        <div class="flex space-x-4 overflow-x-auto whitespace-nowrap">
+                            <a href="#policy" class="nav-link active">政策与市场</a>
+                            <a href="#expansion" class="nav-link">企业扩产</a>
+                            <a href="#technology" class="nav-link">技术突破</a>
+                            <a href="#price" class="nav-link">价格走势</a>
+                        </div>
+                        <div class="mobile-hidden">
+                            <span class="text-sm text-gray-500">2025-10-27 至 2025-11-02</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 政策与市场动态 -->
+                <div id="policy" class="mb-12">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6 category-title">政策与市场动态</h2>
+                    
+                    <!-- 新闻1 -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6 news-card" data-keywords="出口管制,产业链重构,海外布局">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">1. 中国锂电材料出口管制生效，海外产能布局企业受益显著</h3>
+                            <span class="text-sm text-gray-500">2025-11-01</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="keyword">出口管制</span>
+                            <span class="keyword">产业链重构</span>
+                            <span class="keyword">海外布局</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">11月8日起实施的锂电材料出口管制政策覆盖人造石墨负极（压实密度≥2.5g/cm³）及生产设备。璞泰来摩洛哥6万吨基地、贝特瑞印尼8万吨二期项目（2025年底投产）成为规避贸易壁垒的关键布局，订单量环比增长30%。行业分析显示，头部企业海外产能占比将从15%提升至40%，2026年全球负极材料价格或上涨15%-20%。</p>
+                        <div class="flex justify-between items-center">
+                            <a href="http://m.toutiao.com/group/7559353033122005540/?upstream_biz=doubao" class="text-blue-600 hover:text-blue-800 text-sm flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                            <span class="text-xs text-gray-500">来源：今日头条</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻2 -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6 news-card" data-keywords="价格动态,成本传导,产能利用率">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">2. 人造石墨负极企业酝酿涨价，头部企业毛利率回升至32%</h3>
+                            <span class="text-sm text-gray-500">2025-10-31</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="keyword">价格动态</span>
+                            <span class="keyword">成本传导</span>
+                            <span class="keyword">产能利用率</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">上海有色网数据显示，10月下旬人造石墨负极均价维持3.02万元/吨，较月初上涨2%。璞泰来、杉杉股份等企业因石墨化自供率超80%，毛利率回升至32%-35%；二线企业受外协加工成本上涨影响，计划11月提价5%-8%。行业整体产能利用率从58%提升至65%，供需格局持续改善。</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://news.smm.cn/live/detail/103599208" class="text-blue-600 hover:text-blue-800 text-sm flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                            <span class="text-xs text-gray-500">来源：上海有色网</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 企业扩产与海外布局 -->
+                <div id="expansion" class="mb-12">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6 category-title">企业扩产与海外布局</h2>
+                    
+                    <!-- 新闻3 -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6 news-card" data-keywords="海外扩产,成本上升,产能规划">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">3. 尚太科技马来西亚5万吨负极项目投资超支，2026年Q3投产</h3>
+                            <span class="text-sm text-gray-500">2025-10-30</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="keyword">海外扩产</span>
+                            <span class="keyword">成本上升</span>
+                            <span class="keyword">产能规划</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">尚太科技公告显示，马来西亚5万吨负极项目受施工效率影响，单位投资从12亿元增至15.8亿元，电力成本较国内高30%。山西四期20万吨项目（电力成本0.25元/度）将于同期投产，2026年底总产能将突破50万吨，海外产能占比达20%。前三季度公司营收55.06亿元，同比增长52.09%。</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://cj.sina.cn/articles/view/5126633262/13192372e00101fjdy" class="text-blue-600 hover:text-blue-800 text-sm flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                            <span class="text-xs text-gray-500">来源：财经头条</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻4 -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6 news-card" data-keywords="硅碳技术,客户验证,量产规划">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">4. 中科电气硅碳负极中试线投产，2026年Q1批量供货</h3>
+                            <span class="text-sm text-gray-500">2025-10-28</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="keyword">硅碳技术</span>
+                            <span class="keyword">客户验证</span>
+                            <span class="keyword">量产规划</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">中科电气1000吨硅碳负极中试线在湖南宁乡投产，产品通过宁德时代、亿纬锂能测评，首次效率92%，循环寿命1200次。公司计划2026年Q1启动2万吨量产线建设，采用CVD包覆工艺，成本控制在18万元/吨以下，适配4680大圆柱电池。</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://www.hstong.com/news/detail/25101610211759179" class="text-blue-600 hover:text-blue-800 text-sm flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                            <span class="text-xs text-gray-500">来源：华盛通</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 技术突破与材料创新 -->
+                <div id="technology" class="mb-12">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6 category-title">技术突破与材料创新</h2>
+                    
+                    <!-- 新闻5 -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6 news-card" data-keywords="钠电硬碳,专利技术,储能应用">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">5. 宁德时代硬碳负极专利公布，钠电储能寿命突破3000次</h3>
+                            <span class="text-sm text-gray-500">2025-10-27</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="keyword">钠电硬碳</span>
+                            <span class="keyword">专利技术</span>
+                            <span class="keyword">储能应用</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">宁德时代"碳锡内层-硬碳外层"复合负极专利（PCT/CN2024/112176）实现380mAh/g嵌钠容量，循环寿命超3000次，成本较椰壳基硬碳降低25%。该材料已通过华能集团1GWh储能电站验证，2026年将用于钠电重卡蓄电池。</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://m.sohu.com/a/947332181_115377/" class="text-blue-600 hover:text-blue-800 text-sm flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                            <span class="text-xs text-gray-500">来源：搜狐网</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻6 -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6 news-card" data-keywords="硅碳量产,海外客户,产能释放">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">6. 贝特瑞气相硅碳负极批量供应LG新能源，印尼基地产能爬坡</h3>
+                            <span class="text-sm text-gray-500">2025-11-02</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="keyword">硅碳量产</span>
+                            <span class="keyword">海外客户</span>
+                            <span class="keyword">产能释放</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">贝特瑞印尼二期8万吨负极项目进入设备调试阶段，其中3万吨气相硅碳产线优先供应LG新能源46系列圆柱电池，Si含量15%，首效91%。公司硅基负极全球市占率超70%，2025年订单量达1.2万吨，同比增长200%。</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://m.cnstock.com/commonDetail/359562" class="text-blue-600 hover:text-blue-800 text-sm flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                            <span class="text-xs text-gray-500">来源：上海证券报</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 价格动态与供需分析 -->
+                <div id="price" class="mb-12">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6 category-title">价格动态与供需分析</h2>
+                    
+                    <!-- 新闻7 -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6 news-card" data-keywords="天然石墨,区域价差,出口数据">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">7. 天然石墨价格稳中有升，黑龙江产区供应偏紧</h3>
+                            <span class="text-sm text-gray-500">2025-10-27</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="keyword">天然石墨</span>
+                            <span class="keyword">区域价差</span>
+                            <span class="keyword">出口数据</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">上海有色网数据显示，10月27日天然球形石墨全国均价12200元/吨，山东地区11200-13100元/吨，黑龙江地区因环保限产报价11500-13000元/吨，价差扩大至500元/吨。10月出口日韩量同比增长20%，特斯拉4680电池产能爬坡为主要驱动力。</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://hq.smm.cn/new-energy/content/103588896" class="text-blue-600 hover:text-blue-800 text-sm flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                            <span class="text-xs text-gray-500">来源：上海有色网</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 新闻8 -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6 news-card" data-keywords="钠电硬碳,工程招标,成本优势">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">8. 山东中新钠能2.5万吨硬碳项目EPC中标，2026年Q2投产</h3>
+                            <span class="text-sm text-gray-500">2025-10-29</span>
+                        </div>
+                        <div class="mb-3">
+                            <span class="keyword">钠电硬碳</span>
+                            <span class="keyword">工程招标</span>
+                            <span class="keyword">成本优势</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">中国十九冶以6.06亿元中标山东中新钠能硬碳负极项目，采用喷雾干燥+连续焙烧工艺，产品首效85%，成本较进口低30%。项目位于德州高新区，改建车间8.3万平方米，投产后将配套亿纬锂能钠电储能产线，年供货量1.8万吨。</p>
+                        <div class="flex justify-between items-center">
+                            <a href="http://m.lqsbcl.net/news/202510/422557.html" class="text-blue-600 hover:text-blue-800 text-sm flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                            <span class="text-xs text-gray-500">来源：LQSBCL网</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 分页控件 -->
+                <div class="flex justify-center mt-12 mb-8">
+                    <div class="flex items-center space-x-1">
+                        <div class="pagination-item disabled text-gray-400">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div class="pagination-item active">1</div>
+                        <div class="pagination-item disabled text-gray-400">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 数据来源 -->
+                <div class="bg-gray-50 rounded-lg p-4 text-sm text-gray-600">
+                    <p class="font-medium mb-2">数据来源：</p>
+                    <p>政府公示、行业协会报告、企业公告及权威财经媒体</p>
+                    <p class="mt-2">整理说明：严格筛选2025年10月27日-11月2日期间发布内容，覆盖政策、扩产、技术、价格四大核心维度，优先采用上海有色网、财经头条等权威信源。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="mt-12 text-center text-gray-500 text-sm">
+            <p>created by <a href="https://space.coze.cn" class="text-blue-600 hover:text-blue-800">coze space</a></p>
+            <p>页面内容均由 AI 生成，仅供参考</p>
+        </footer>
+    </div>
+
+    <script>
+        // 导航栏滚动效果
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // 更新活动导航项
+                document.querySelectorAll('.nav-link').forEach(item => {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
+        // 监听滚动事件，更新活动导航项
+        const sections = document.querySelectorAll('[id^="policy"], [id^="expansion"], [id^="technology"], [id^="price"]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // 关键词筛选功能
+        const keywords = document.querySelectorAll('.keyword');
+        const newsCards = document.querySelectorAll('.news-card');
+        const clearFilterBtn = document.getElementById('clearFilter');
+        let activeKeywords = [];
+
+        keywords.forEach(keyword => {
+            keyword.addEventListener('click', function() {
+                const keywordText = this.getAttribute('data-keyword');
+                
+                // 如果是筛选栏的关键词
+                if (this.parentElement.parentElement.id === 'filterSidebar') {
+                    // 切换激活状态
+                    this.classList.toggle('active');
+                    
+                    // 更新活跃关键词列表
+                    if (this.classList.contains('active')) {
+                        activeKeywords.push(keywordText);
+                    } else {
+                        activeKeywords = activeKeywords.filter(k => k !== keywordText);
+                    }
+                    
+                    // 执行筛选
+                    filterNewsCards();
+                }
+            });
+        });
+
+        // 清除筛选
+        clearFilterBtn.addEventListener('click', function() {
+            keywords.forEach(keyword => {
+                keyword.classList.remove('active');
+            });
+            activeKeywords = [];
+            newsCards.forEach(card => {
+                card.style.display = 'block';
+            });
+        });
+
+        // 筛选新闻卡片
+        function filterNewsCards() {
+            if (activeKeywords.length === 0) {
+                newsCards.forEach(card => {
+                    card.style.display = 'block';
+                });
+                return;
+            }
+            
+            newsCards.forEach(card => {
+                const cardKeywords = card.getAttribute('data-keywords').split(',');
+                const hasMatch = activeKeywords.some(keyword => cardKeywords.includes(keyword));
+                
+                if (hasMatch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // 移动端适配：筛选栏切换
+        const filterToggle = document.getElementById('filterToggle');
+        const filterSidebar = document.getElementById('filterSidebar');
+
+        filterToggle.addEventListener('click', function() {
+            if (filterSidebar.style.display === 'block') {
+                filterSidebar.style.display = 'none';
+            } else {
+                filterSidebar.style.display = 'block';
+                // 添加绝对定位使其覆盖内容
+                filterSidebar.style.position = 'fixed';
+                filterSidebar.style.top = '0';
+                filterSidebar.style.left = '0';
+                filterSidebar.style.width = '100%';
+                filterSidebar.style.height = '100%';
+                filterSidebar.style.zIndex = '100';
+                filterSidebar.style.overflowY = 'auto';
+            }
+        });
+
+        // 移动端适配：调整卡片间距
+        if (window.innerWidth < 640) {
+            document.querySelectorAll('.news-card').forEach(card => {
+                card.classList.add('mb-4');
+            });
+        }
+    </script>
+</body>
+</html>
