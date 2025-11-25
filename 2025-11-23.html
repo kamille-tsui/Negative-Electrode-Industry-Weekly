@@ -509,41 +509,7 @@
                 });
             });
         });
-        
-        // 电池排产占比图表
-        const ctx = document.getElementById('batteryProductionChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['储能电芯', '动力电池', '消费类电池'],
-                datasets: [{
-                    data: [33.6, 52.4, 14],
-                    backgroundColor: [
-                        '#3b82f6',
-                        '#10b981',
-                        '#8b5cf6'
-                    ],
-                    borderWidth: 0
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        position: 'bottom'
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return context.label + ': ' + context.raw + '%';
-                            }
-                        }
-                    }
-                }
-            }
-        });
-        
+                
         // 页面加载完成后的动画效果
         document.addEventListener('DOMContentLoaded', () => {
             const fadeElements = document.querySelectorAll('.fade-in');
