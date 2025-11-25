@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年11月17日-23日新能源负极材料及锂电池行业新闻快讯</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8f9fa;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .news-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .news-card:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .news-title {
+            font-weight: 600;
+            color: #2d3748;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .news-brief {
+            color: #4a5568;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .keyword-tag {
+            background-color: #e6f0ff;
+            color: #2563eb;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 16px;
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            transition: all 0.2s ease;
+        }
+        
+        .keyword-tag:hover {
+            background-color: #dbeafe;
+            transform: scale(1.05);
+        }
+        
+        .news-meta {
+            color: #718096;
+            font-size: 0.875rem;
+        }
+        
+        .section-title {
+            font-weight: 700;
+            color: #1a202c;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #3b82f6;
+            border-radius: 3px;
+        }
+        
+        .source-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+        
+        .source-link:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+        
+        .source-link i {
+            margin-left: 0.25rem;
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* 骨架屏样式 */
+        .skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: skeleton-loading 1.5s infinite;
+        }
+        
+        @keyframes skeleton-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        
+        /* 回到顶部按钮 */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #3b82f6;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: #2563eb;
+            transform: translateY(-3px);
+        }
+        
+        /* 加载更多按钮 */
+        .load-more {
+            background-color: #f3f4f6;
+            color: #4a5568;
+            border: 1px solid #e5e7eb;
+            transition: all 0.2s ease;
+        }
+        
+        .load-more:hover {
+            background-color: #e5e7eb;
+            color: #1f2937;
+        }
+        
+        /* 响应式调整 */
+        @media (max-width: 640px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .back-to-top {
+                width: 40px;
+                height: 40px;
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
+        
+        /* 标签云效果 */
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- 页面头部 -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto py-4 px-4">
+            <h1 class="text-xl md:text-2xl font-bold text-center text-gray-800">2025年11月17日-23日新能源负极材料及锂电池行业新闻快讯</h1>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto py-8 px-4">
+        <!-- 负极材料行业资讯部分 -->
+        <section class="mb-12">
+            <h2 class="section-title text-2xl mb-6">负极材料行业资讯</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 news-grid">
+                <!-- 新闻1 -->
+                <article class="news-card p-5 fade-in">
+                    <h3 class="news-title text-lg mb-3">1. 宁夏金硅1000吨硅基负极材料项目获批</h3>
+                    <p class="news-brief mb-4">11月20日，吴忠市生态环境局红寺堡分局发布公示，宁夏金硅1000吨/年锂电池硅基负极材料项目获批，总投资6000万元，产品为一氧化硅，依托中车株洲所红寺堡新能源智能装备产业园现有厂房建设。</p>
+                    <div class="tag-cloud mb-4">
+                        <span class="keyword-tag">硅基负极</span>
+                        <span class="keyword-tag">宁夏金硅</span>
+                        <span class="keyword-tag">项目获批</span>
+                        <span class="keyword-tag">一氧化硅</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="news-meta">2025-11-20 09:30:00</div>
+                        <a href="http://m.toutiao.com/group/7576211993699353140/?upstream_biz=doubao" class="source-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+                
+                <!-- 新闻2 -->
+                <article class="news-card p-5 fade-in" style="animation-delay: 0.1s;">
+                    <h3 class="news-title text-lg mb-3">2. 天然石墨负极价格稳定，人造石墨成本压力显现</h3>
+                    <p class="news-brief mb-4">截至11月20日，天然石墨（低端）价格维持22500元/吨，中端37000元/吨；人造石墨原料低硫焦价格累计涨幅超15%，石墨化加工费预计因丰水期结束上涨。</p>
+                    <div class="tag-cloud mb-4">
+                        <span class="keyword-tag">天然石墨</span>
+                        <span class="keyword-tag">人造石墨</span>
+                        <span class="keyword-tag">价格走势</span>
+                        <span class="keyword-tag">低硫焦</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="news-meta">2025-11-20 17:00:00</div>
+                        <a href="https://m.10jqka.com.cn/20251120/c672620122.shtml" class="source-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+                
+                <!-- 新闻3 -->
+                <article class="news-card p-5 fade-in" style="animation-delay: 0.2s;">
+                    <h3 class="news-title text-lg mb-3">3. 国家固态电池中试网络布局硅基负极材料</h3>
+                    <p class="news-brief mb-4">11月19日，工信部印发通知，将硅基负极材料列为固态电池关键材料技术，纳入制造业中试平台体系化布局，重点突破从实验室样品到工厂产品的转化难题。</p>
+                    <div class="tag-cloud mb-4">
+                        <span class="keyword-tag">固态电池</span>
+                        <span class="keyword-tag">硅基负极</span>
+                        <span class="keyword-tag">中试网络</span>
+                        <span class="keyword-tag">工信部</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="news-meta">2025-11-19 18:42:11</div>
+                        <a href="http://m.toutiao.com/group/7574384943820784179/?upstream_biz=doubao" class="source-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+                
+                <!-- 新闻4 -->
+                <article class="news-card p-5 fade-in" style="animation-delay: 0.3s;">
+                    <h3 class="news-title text-lg mb-3">4. 安庆望江年产1万吨锂电负极材料项目公示</h3>
+                    <p class="news-brief mb-4">11月17日，安庆市生态环境局发布《年产10000吨锂离子电池负极材料加工建设项目环境影响报告表》审批前公示，项目总投资5000万元，选址望江县经济开发区，预计2026年Q2投产。</p>
+                    <div class="tag-cloud mb-4">
+                        <span class="keyword-tag">负极材料</span>
+                        <span class="keyword-tag">安庆望江</span>
+                        <span class="keyword-tag">项目公示</span>
+                        <span class="keyword-tag">产能规划</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="news-meta">2025-11-17 10:15:00</div>
+                        <a href="https://www.hubei.chinabidding.cc/read-680366183.html" class="source-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+                
+                <!-- 新闻5 -->
+                <article class="news-card p-5 fade-in" style="animation-delay: 0.4s;">
+                    <h3 class="news-title text-lg mb-3">5. 山东中新钠能10亿元投建2.5万吨硬碳负极项目</h3>
+                    <p class="news-brief mb-4">11月18日，山东中新钠能新材料产业有限公司宣布在德州禹城启动2.5万吨钠离子电池硬碳负极材料项目，总投资10亿元，建成后预计年营收11亿元，税收1.9亿元。</p>
+                    <div class="tag-cloud mb-4">
+                        <span class="keyword-tag">硬碳负极</span>
+                        <span class="keyword-tag">钠离子电池</span>
+                        <span class="keyword-tag">中新钠能</span>
+                        <span class="keyword-tag">德州禹城</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="news-meta">2025-11-18 14:30:00</div>
+                        <a href="http://m.toutiao.com/group/7574626407075906082/?upstream_biz=doubao" class="source-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+                
+                <!-- 新闻6 -->
+                <article class="news-card p-5 fade-in" style="animation-delay: 0.5s;">
+                    <h3 class="news-title text-lg mb-3">6. 负极材料企业酝酿涨价，中小厂推涨1500元/吨</h3>
+                    <p class="news-brief mb-4">11月21日市场消息，受低硫焦价格持续上涨及石墨化加工费预期上调影响，部分负极材料中小企业已向客户推涨1500元/吨，主流价格区间2.1-3.2万元/吨，头部企业正与大客户协商新价。</p>
+                    <div class="tag-cloud mb-4">
+                        <span class="keyword-tag">负极涨价</span>
+                        <span class="keyword-tag">低硫焦</span>
+                        <span class="keyword-tag">石墨化加工费</span>
+                        <span class="keyword-tag">中小企业</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="news-meta">2025-11-21 09:45:00</div>
+                        <a href="http://m.toutiao.com/group/7568305096778400271/?upstream_biz=doubao" class="source-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+                
+                <!-- 新闻7 -->
+                <article class="news-card p-5 fade-in" style="animation-delay: 0.6s;">
+                    <h3 class="news-title text-lg mb-3">7. 匠芯新材固态电池负极纸专利获批</h3>
+                    <p class="news-brief mb-4">11月18日，湖北匠芯新材"一种固态电池用柔性负极纸张"专利获批（CN119786543B），采用造纸工艺制备硅碳复合负极，解决体积膨胀难题，适配全固态电池，千吨级产线计划年底投产。</p>
+                    <div class="tag-cloud mb-4">
+                        <span class="keyword-tag">固态电池</span>
+                        <span class="keyword-tag">柔性负极</span>
+                        <span class="keyword-tag">专利获批</span>
+                        <span class="keyword-tag">硅碳复合</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="news-meta">2025-11-18 18:40:00</div>
+                        <a href="https://caifuhao.eastmoney.com/news/20251118184057528854690" class="source-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- 锂电池下游行业资讯部分 -->
+        <section class="mb-12">
+            <h2 class="section-title text-2xl mb-6">锂电池下游行业资讯</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 新闻1 -->
+                <article class="news-card p-5 fade-in">
+                    <h3 class="news-title text-lg mb-3">1. 11月中国电池企业排产延续高增长，储能电芯占比突破33%</h3>
+                    <p class="news-brief mb-4">大东时代智库数据显示，2025年11月中国市场动力+储能+消费类电池排产量209GWh，环比增12.4%，同比增长64.6%，其中储能电芯排产占比约33.6%，行业平均开工率持续高位运行。</p>
+                    <div class="tag-cloud mb-4">
+                        <span class="keyword-tag">电池排产</span>
+                        <span class="keyword-tag">储能电芯</span>
+                        <span class="keyword-tag">开工率</span>
+                        <span class="keyword-tag">环比增长</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="news-meta">2025-11-21 10:15:00</div>
+                        <a href="https://xueqiu.com/4964213805/359794536" class="source-link" target="_blank">查看原文 <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- 关键词统计和热门标签 -->
+        <section class="mb-12">
+            <h2 class="section-title text-2xl mb-6">热门关键词和标签</h2>
+            
+            <div class="news-card p-5">
+                <div class="tag-cloud">
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">负极材料</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">硅基负极</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">固态电池</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">硬碳负极</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">钠离子电池</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">天然石墨</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">人造石墨</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">低硫焦</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">石墨化加工费</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">项目获批</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">产能规划</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">电池排产</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">储能电芯</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">开工率</span>
+                    <span class="keyword-tag" style="background-color: #dbeafe; color: #1d4ed8; font-size: 0.875rem;">环比增长</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 行业数据可视化 -->
+        <section class="mb-12">
+            <h2 class="section-title text-2xl mb-6">行业数据速览</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="news-card p-5">
+                    <h3 class="text-lg font-semibold mb-4">负极材料价格区间</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">天然石墨(低端)</span>
+                                <span class="text-sm font-medium">22,500元/吨</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">天然石墨(中端)</span>
+                                <span class="text-sm font-medium">37,000元/吨</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 74%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">人造石墨(主流)</span>
+                                <span class="text-sm font-medium">21,000-32,000元/吨</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-card p-5">
+                    <h3 class="text-lg font-semibold mb-4">11月电池排产占比</h3>
+                    <canvas id="batteryProductionChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">新能源负极材料行业新闻快讯</h3>
+                    <p class="text-gray-400">更新时间: 2025年11月23日</p>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    <p>页面内容均由 AI 生成，仅供参考</p>
+                    <p class="mt-2">created by <a href="https://space.coze.cn" class="text-blue-400 hover:text-blue-300 transition-colors" target="_blank">coze space</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script>
+        // 回到顶部按钮功能
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // 电池排产占比图表
+        const ctx = document.getElementById('batteryProductionChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['储能电芯', '动力电池', '消费类电池'],
+                datasets: [{
+                    data: [33.6, 52.4, 14],
+                    backgroundColor: [
+                        '#3b82f6',
+                        '#10b981',
+                        '#8b5cf6'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.label + ': ' + context.raw + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        
+        // 页面加载完成后的动画效果
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            fadeElements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
