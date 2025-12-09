@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年12月1日-7日新能源负极材料行业新闻快讯</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .news-card {
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .keyword-pill {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-title {
+            background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        
+        .time-badge {
+            background-color: #f1f5f9;
+            color: #64748b;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+        }
+        
+        .mobile-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            margin: 0.5rem;
+            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            transform-origin: top;
+            transform: scaleY(0);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            z-index: 100;
+        }
+        
+        .mobile-menu.active {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+        
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .price-up {
+            color: #ef4444;
+            font-weight: 600;
+        }
+        
+        .news-date {
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+        
+        .source-link {
+            color: #3b82f6;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .source-link:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+        
+        .news-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #dbeafe;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2563eb;
+        }
+        
+        @media (max-width: 768px) {
+            .news-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 p-4 transition-all duration-300" id="mainNav">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">
+                <i class="fas fa-bolt mr-2"></i>新能源负极材料行业快讯
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#negative-materials" class="text-gray-600 hover:text-blue-600 transition-colors">负极材料资讯</a>
+                <a href="#downstream-industry" class="text-gray-600 hover:text-blue-600 transition-colors">下游行业资讯</a>
+            </div>
+            <button class="md:hidden text-gray-600 focus:outline-none" id="mobileMenuButton" aria-label="导航菜单">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+
+            <!-- 移动端导航菜单 -->
+            <div class="mobile-menu md:hidden" id="mobileMenu">
+                <a href="#negative-materials" class="text-gray-600 hover:text-blue-600 transition-colors flex items-center">
+                    <i class="fas fa-microchip mr-3 text-blue-500"></i>负极材料资讯
+                </a>
+                <a href="#downstream-industry" class="text-gray-600 hover:text-blue-600 transition-colors flex items-center">
+                    <i class="fas fa-industry mr-3 text-blue-500"></i>下游行业资讯
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 头部横幅 -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-12 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">2025年12月1日-7日</h1>
+            <p class="text-xl md:text-2xl">新能源负极材料行业新闻快讯</p>
+            <div class="mt-8 flex justify-center">
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4 max-w-md w-full">
+                    <div class="w-full bg-white/30 rounded-full h-2">
+                        <div class="bg-white h-2 rounded-full" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto py-8 px-4">
+        <!-- 负极材料行业资讯 -->
+        <section id="negative-materials" class="mb-12">
+            <h2 class="section-title text-2xl font-bold mb-6 flex items-center">
+                <i class="fas fa-microchip mr-2"></i>负极材料行业资讯
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- 新闻1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover news-card">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4">
+                        <div class="news-icon">
+                            <i class="fas fa-flask text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-800">中科电气钠离子电池硬碳负极材料实现量产并供货宁德时代</h3>
+                                <span class="time-badge">2025-12-02</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">中科电气（SZ300035）宣布其钠离子电池硬碳负极材料项目已实现量产，开始向宁德时代等客户供货，支持钠离子电池技术商业化应用。</p>
+                            <div class="flex flex-wrap mb-3">
+                                <span class="keyword-pill">中科电气</span>
+                                <span class="keyword-pill">硬碳负极</span>
+                                <span class="keyword-pill">钠离子电池</span>
+                                <span class="keyword-pill">量产供货</span>
+                            </div>
+                            <a href="https://m.sohu.com/a/961804962_121885030/" class="source-link flex items-center" target="_blank">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover news-card">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4">
+                        <div class="news-icon">
+                            <i class="fas fa-industry text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-800">Novonix计划在美国新建两座人造石墨负极工厂</h3>
+                                <span class="time-badge">2025-12-04</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Novonix计划在田纳西州查塔努加改造前阿尔斯通工厂建设年产1万吨人造石墨负极加工厂，并在Enterprise South工业园区新建年产3万吨工厂，2026年投产。</p>
+                            <div class="flex flex-wrap mb-3">
+                                <span class="keyword-pill">Novonix</span>
+                                <span class="keyword-pill">人造石墨</span>
+                                <span class="keyword-pill">工厂建设</span>
+                                <span class="keyword-pill">美国</span>
+                            </div>
+                            <a href="https://cj.sina.cn/articles/view/5953189932/162d6782c06703hqkc" class="source-link flex items-center" target="_blank">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover news-card">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4">
+                        <div class="news-icon">
+                            <i class="fas fa-project-diagram text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-800">旭阳集团20万吨负极一体化产能加速建设</h3>
+                                <span class="time-badge">2025-12-01</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">旭阳集团旗下上市公司全面转型锂电负极材料，20万吨一体化产能建设稳步推进，配套58万千瓦源网荷储绿电项目，预计2026年形成14万吨负极一体化产能，绿电自供可降低成本400-600元/吨。</p>
+                            <div class="flex flex-wrap mb-3">
+                                <span class="keyword-pill">旭阳集团</span>
+                                <span class="keyword-pill">负极一体化</span>
+                                <span class="keyword-pill">绿电项目</span>
+                                <span class="keyword-pill">成本优势</span>
+                            </div>
+                            <a href="https://m.10jqka.com.cn/sr/20251201/55098407.shtml" class="source-link flex items-center" target="_blank">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover news-card">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4">
+                        <div class="news-icon">
+                            <i class="fas fa-handshake text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-800">尚太科技山西20万吨负极材料项目签约</h3>
+                                <span class="time-badge">2025-12-01</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">12月1日，尚太科技与山西转型综改示范区签约年产20万吨锂电负极材料项目，总投资40亿元，占地955亩，建设智能化生产线，达产后预计年产值60亿元，强化华北地区负极材料产能布局。</p>
+                            <div class="flex flex-wrap mb-3">
+                                <span class="keyword-pill">尚太科技</span>
+                                <span class="keyword-pill">负极材料项目</span>
+                                <span class="keyword-pill">山西</span>
+                                <span class="keyword-pill">产能布局</span>
+                            </div>
+                            <a href="https://m.sohu.com/a/961111398_121885030/" class="source-link flex items-center" target="_blank">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻5 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover news-card">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4">
+                        <div class="news-icon">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-800">负极材料价格启动上涨，石墨化环节盈利修复</h3>
+                                <span class="time-badge">2025-12-05</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">12月以来，负极材料全系列产品价格启动上涨，山西贝特瑞、尚太科技等企业订单涨幅约<span class="price-up">10%</span>，对应单吨盈利提升1000元以上，石墨化三方加工价格自10月以来上涨近200元/吨，行业盈利水平逐步修复。</p>
+                            <div class="flex flex-wrap mb-3">
+                                <span class="keyword-pill">负极材料</span>
+                                <span class="keyword-pill">价格上涨</span>
+                                <span class="keyword-pill">石墨化盈利</span>
+                                <span class="keyword-pill">行业修复</span>
+                            </div>
+                            <a href="https://xueqiu.com/3207053190/357175748" class="source-link flex items-center" target="_blank">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻6 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover news-card">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4">
+                        <div class="news-icon">
+                            <i class="fas fa-globe text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-800">POSCO Future M与Factorial Energy合作开发固态电池材料</h3>
+                                <span class="time-badge">2025-12-04</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">12月4日，POSCO Future M与美国Factorial Energy签署合作协议，共同开发下一代固态电池材料，重点合作方向为先进正极材料和硅基负极，强化固态电池核心材料技术布局。</p>
+                            <div class="flex flex-wrap mb-3">
+                                <span class="keyword-pill">POSCO Future M</span>
+                                <span class="keyword-pill">固态电池材料</span>
+                                <span class="keyword-pill">硅基负极</span>
+                                <span class="keyword-pill">国际合作</span>
+                            </div>
+                            <a href="https://www.ajupress.com/view/20251204102745830" class="source-link flex items-center" target="_blank">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻7 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover news-card">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4">
+                        <div class="news-icon">
+                            <i class="fas fa-lightbulb text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-800">宁德时代自生成负极技术量产准备加速</h3>
+                                <span class="time-badge">2025-12-03</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">宁德时代自生成负极技术进展顺利，钠离子电池体系能量密度达350Wh/L，-40℃低温性能保持90%电量，循环寿命超1万次，预计2025年12月开始向乘用车市场供货，推动负极材料技术路线革新。</p>
+                            <div class="flex flex-wrap mb-3">
+                                <span class="keyword-pill">宁德时代</span>
+                                <span class="keyword-pill">自生成负极</span>
+                                <span class="keyword-pill">钠离子电池</span>
+                                <span class="keyword-pill">技术革新</span>
+                            </div>
+                            <a href="https://xueqiu.com/2518313770/333375550" class="source-link flex items-center" target="_blank">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 锂电池下游行业资讯 -->
+        <section id="downstream-industry" class="mb-12">
+            <h2 class="section-title text-2xl font-bold mb-6 flex items-center">
+                <i class="fas fa-industry mr-2"></i>锂电池下游行业资讯
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- 新闻1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover news-card">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4">
+                        <div class="news-icon">
+                            <i class="fas fa-chart-pie text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-800">锂电负极市场需求持续增长，资源向头部集中</h3>
+                                <span class="time-badge">2025-12-06</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">2025年负极材料市场需求预计保持20%以上稳定增长，头部企业凭借技术、规模优势持续扩张，行业资源加速集中，中小产能逐步退出。</p>
+                            <div class="flex flex-wrap mb-3">
+                                <span class="keyword-pill">负极市场</span>
+                                <span class="keyword-pill">需求增长</span>
+                                <span class="keyword-pill">头部集中</span>
+                                <span class="keyword-pill">行业整合</span>
+                            </div>
+                            <a href="http://m.toutiao.com/group/7455072745274868250/?upstream_biz=doubao" class="source-link flex items-center" target="_blank">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover news-card">
+                    <div class="flex flex-col md:flex-row md:items-start gap-4">
+                        <div class="news-icon">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-gray-800">负极材料价格全面上涨，石墨化环节盈利修复</h3>
+                                <span class="time-badge">2025-12-05</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">12月5日行业数据显示，负极材料全系列产品价格启动上涨，快充与非快充产品同步提价，头部企业订单涨幅约<span class="price-up">10%</span>，石墨化加工价格自10月以来累计上涨200元/吨，行业盈利水平逐步回升。</p>
+                            <div class="flex flex-wrap mb-3">
+                                <span class="keyword-pill">负极材料</span>
+                                <span class="keyword-pill">价格上涨</span>
+                                <span class="keyword-pill">石墨化</span>
+                                <span class="keyword-pill">盈利修复</span>
+                            </div>
+                            <a href="https://xueqiu.com/3207053190/357175748" class="source-link flex items-center" target="_blank">
+                                <i class="fas fa-external-link-alt mr-1"></i> 查看原文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>2025年12月1日-7日新能源负极材料行业新闻快讯</p>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    <p>created by <a href="https://space.coze.cn" class="text-blue-400 hover:text-blue-300 transition-colors" target="_blank">coze space</a></p>
+                    <p>页面内容均由 AI 生成，仅供参考</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // 切换图标
+                const icon = this.querySelector('i');
+                if (mobileMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // 点击页面其他区域关闭移动端菜单
+            document.addEventListener('click', function(event) {
+                const isClickInsideNav = document.getElementById('mainNav').contains(event.target);
+                
+                if (!isClickInsideNav && mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                    const icon = menuButton.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // 导航栏滚动效果
+            const nav = document.getElementById('mainNav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 10) {
+                    nav.classList.add('nav-scrolled');
+                } else {
+                    nav.classList.remove('nav-scrolled');
+                }
+            });
+            
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // 点击导航链接后关闭移动端菜单
+                    if (mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                        const icon = menuButton.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+            
+            // 价格走势图
+            const ctx = document.getElementById('priceChart').getContext('2d');
+            const priceChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['10月', '11月上旬', '11月下旬', '12月1日', '12月3日', '12月5日', '12月7日'],
+                    datasets: [{
+                        label: '负极材料价格指数',
+                        data: [100, 102, 103, 105, 107, 110, 112],
+                        borderColor: '#3b82f6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 95,
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
