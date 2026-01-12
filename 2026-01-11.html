@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新能源负极材料行业新闻快讯 - 2026年1月5日-11日</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        
+        .news-card {
+            transition: all 0.3s ease;
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 10px 10px -5px rgba(59, 130, 246, 0.04);
+        }
+        
+        .tag {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .news-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.4;
+            transition: color 0.2s ease;
+        }
+        
+        .news-title:hover {
+            color: #3b82f6;
+        }
+        
+        .source-link {
+            font-size: 0.875rem;
+            color: #3b82f6;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+        
+        .source-link:hover {
+            text-decoration: underline;
+            transform: translateX(2px);
+        }
+        
+        .news-section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .news-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 3rem;
+            height: 0.25rem;
+            background-color: #3b82f6;
+            border-radius: 0.125rem;
+        }
+        
+        .timestamp {
+            font-size: 0.75rem;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+        }
+        
+        .news-brief {
+            line-height: 1.6;
+            color: #475569;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .news-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #0f172a;
+                color: #f1f5f9;
+            }
+            
+            .news-card {
+                background-color: #1e293b;
+                border-color: #334155;
+            }
+            
+            .news-brief {
+                color: #cbd5e1;
+            }
+            
+            .timestamp {
+                color: #94a3b8;
+            }
+            
+            .tag {
+                background-color: rgba(59, 130, 246, 0.2);
+                color: #93c5fd;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+    <!-- 页面头部 -->
+    <header class="mb-10 text-center">
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-gray-800 dark:text-white">新能源负极材料行业新闻快讯</h1>
+        <p class="text-gray-600 dark:text-gray-300 text-sm sm:text-base">2026年1月5日-2026年1月11日</p>
+        <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+    </header>
+    
+    <!-- 负极材料行业资讯 -->
+    <section class="mb-12">
+        <h2 class="news-section-title text-xl sm:text-2xl font-bold mb-6 text-gray-800 dark:text-white">
+            <i class="fas fa-battery-three-quarters text-blue-500 mr-2"></i>负极材料行业资讯
+        </h2>
+        <div class="news-container" id="anode-news-container"></div>
+    </section>
+    
+    <!-- 锂电池下游行业资讯 -->
+    <section class="mb-12">
+        <h2 class="news-section-title text-xl sm:text-2xl font-bold mb-6 text-gray-800 dark:text-white">
+            <i class="fas fa-plug text-green-500 mr-2"></i>锂电池下游行业资讯
+        </h2>
+        <div class="news-container" id="downstream-news-container"></div>
+    </section>
+    
+    <!-- 页脚 -->
+    <footer class="text-center text-gray-500 text-sm mt-16 pt-6 border-t border-gray-200 dark:border-gray-700">
+        <p>created by <a href="https://space.coze.cn" class="text-blue-500 hover:underline">coze space</a></p>
+        <p class="mt-2">页面内容均由 AI 生成，仅供参考</p>
+    </footer>
+    
+    <script>
+        // 新闻数据
+        const anodeNews = [
+            {
+                id: 1,
+                title: "百川股份10万吨负极材料一体化项目投产",
+                brief: "1月11日，百川股份年产10万吨负极材料（含10万吨石墨化）一体化项目全部投产，采用“针状焦—石墨化”全流程工艺，依托宁东基地能源优势，有效缓解高端石墨化产能紧张，达产后预计年产值超45亿元。",
+                keywords: ["石墨化产能", "一体化生产", "百川股份", "成本优势"],
+                timestamp: "2026-01-11 21:33:00",
+                link: "https://m.sohu.com/a/974948587_121123888/"
+            },
+            {
+                id: 2,
+                title: "上海科耘3000吨硅碳负极项目签约",
+                brief: "1月5日，上海科耘实业年产3000吨硅碳负极材料项目签约落地安徽裕安，总投资超3亿元，采用CVD气相沉积工艺，产品适配动力电池与储能领域，预计2027年Q1投产，达产后年产值不低于10亿元。",
+                keywords: ["硅碳负极", "CVD技术", "上海科耘", "产能规划"],
+                timestamp: "2026-01-07 16:52:00",
+                link: "http://m.cbea.com/djgc/202601/970892.html"
+            },
+            {
+                id: 3,
+                title: "东岛新能源高振实人造石墨专利落地",
+                brief: "1月6日，东岛新能源与聚鑫新能源联合申请的“高振实人造石墨负极”专利公布，通过二次造粒与等静压成型技术，振实密度达1.00-1.25g/cm³，循环寿命提升20%，适配高能量密度电池需求。",
+                keywords: ["人造石墨", "振实密度", "专利技术", "东岛新能源"],
+                timestamp: "2026-01-06 01:46:00",
+                link: "https://finance.sina.com.cn/stock/aigc/zl/2026-01-06/doc-inhfknak5890621.shtml"
+            },
+            {
+                id: 4,
+                title: "凯金宁德20万吨负极项目开工",
+                brief: "1月10日，凯金能源宁德年产20万吨负极材料项目开工，总投资50亿元，一期建设3条炭化线及12条成品线，采用第四代石墨化工艺，预计2027年6月投产，主要供应宁德时代麒麟电池产线。",
+                keywords: ["产能扩张", "凯金能源", "石墨化工艺", "宁德基地"],
+                timestamp: "2026-01-10 15:49:00",
+                link: "https://m.sohu.com/a/974639655_121123888/"
+            },
+            {
+                id: 5,
+                title: "负极石墨化加工费维持高位",
+                brief: "1月8日SMM数据显示，高端石墨化加工费维持0.96万元/吨，中端0.84万元/吨，价格连续6周持稳。针状焦原料价格环比上涨7.34%至2850元/吨，成本支撑下负极材料价格预计延续坚挺。",
+                keywords: ["石墨化加工费", "针状焦", "成本支撑", "SMM"],
+                timestamp: "2026-01-08 00:00:00",
+                link: "https://car.smm.cn/h5/price/202206230003"
+            },
+            {
+                id: 6,
+                title: "国轩高科万吨级硅碳负极项目开工",
+                brief: "1月6日，国轩高科庐江年产1万吨硅碳负极项目开工，采用“纳米限域包覆”技术，能量密度达1800mAh/g，配套公司4680圆柱电池产线，预计2027年Q2投产，年产能满足10GWh电池需求。",
+                keywords: ["硅碳负极", "国轩高科", "纳米包覆", "圆柱电池"],
+                timestamp: "2026-01-06 09:38:46",
+                link: "http://m.toutiao.com/group/7593170040922210859/?upstream_biz=doubao"
+            },
+            {
+                id: 7,
+                title: "贝特瑞干法电极技术产业化",
+                brief: "1月5日，贝特瑞与清研电子成立合资公司，推动干法电极技术量产，省去溶剂回收环节，能耗降低30%，适配硅基负极材料，目前已通过宁德时代中试验证，2026年Q4量产。",
+                keywords: ["干法电极", "贝特瑞", "硅基负极", "降本增效"],
+                timestamp: "2026-01-05 10:16:37",
+                link: "https://mnews.tianyancha.com/ll_h5dpe41sx7.html"
+            }
+        ];
+        
+        const downstreamNews = [
+            {
+                id: 1,
+                title: "碳酸锂价格周涨15.16%突破14万元/吨",
+                brief: "1月9日SMM数据显示，电池级碳酸锂均价14万元/吨（周涨15.16%），氢氧化锂13.67万元/吨（周涨33.24%），产业链库存连续19周去化，期货主力合约升水现货2140元/吨，抢出口政策刺激需求淡季不淡。",
+                keywords: ["碳酸锂涨价", "去库存", "期货升水", "SMM"],
+                timestamp: "2026-01-09 00:00:00",
+                link: "https://data.eastmoney.com/report/zw_strategy.jshtml?encodeUrl=Vop7cteqKPwqH+c7kmo%2FLJ46iMTDpR8TDl38oF48e2c="
+            },
+            {
+                id: 2,
+                title: "四部委规范储能电池竞争秩序",
+                brief: "1月7日，工信部等四部委联合召开座谈会，要求严控盲目扩产、打击低价竞争，建立产能监测预警机制，推动头部企业产能利用率提升至85%以上，强化专利保护与质量监管。",
+                keywords: ["储能反内卷", "产能调控", "政策规范", "四部委"],
+                timestamp: "2026-01-08 12:34:30",
+                link: "http://m.toutiao.com/group/7592844449076478473/?upstream_biz=doubao"
+            },
+            {
+                id: 3,
+                title: "磷酸铁锂加工费提涨1000元/吨落地",
+                brief: "1月8日鑫椤资讯显示，磷酸铁锂加工费提涨1000元/吨落地，主流报价5.03-5.13万元/吨，碳酸锂结算参考期货价格，头部企业减产检修支撑价格，预计Q1加工费有望再涨500元/吨。",
+                keywords: ["加工费上涨", "减产支撑", "期货联动", "鑫椤资讯"],
+                timestamp: "2026-01-08 00:00:00",
+                link: "http://www.icbattery.com/news/show-htm-itemid-63359.html"
+            }
+        ];
+        
+        // 渲染新闻卡片
+        function renderNewsCards(newsArray, containerId) {
+            const container = document.getElementById(containerId);
+            
+            newsArray.forEach((news, index) => {
+                // 创建新闻卡片元素
+                const card = document.createElement('div');
+                card.className = 'news-card bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-5 fade-in';
+                card.style.animationDelay = `${index * 0.1}s`;
+                
+                // 构建卡片内容
+                card.innerHTML = `
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="news-title flex-1 pr-2">${news.title}</h3>
+                    </div>
+                    <p class="news-brief text-sm mb-4">${news.brief}</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        ${news.keywords.map(keyword => `<span class="tag bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-100">#${keyword}</span>`).join('')}
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="timestamp">
+                            <i class="far fa-clock mr-1"></i> ${news.timestamp}
+                        </div>
+                        <a href="${news.link}" class="source-link" target="_blank" rel="noopener noreferrer">
+                            阅读原文 <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                        </a>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+        
+        // 页面加载完成后渲染新闻
+        document.addEventListener('DOMContentLoaded', () => {
+            renderNewsCards(anodeNews, 'anode-news-container');
+            renderNewsCards(downstreamNews, 'downstream-news-container');
+            
+            // 添加平滑滚动效果
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
