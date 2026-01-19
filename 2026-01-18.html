@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新能源负极材料行业新闻快讯</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        
+        .news-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .anode-card {
+            border-left-color: #3b82f6;
+        }
+        
+        .downstream-card {
+            border-left-color: #10b981;
+        }
+        
+        .keyword-pill {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            background-color: #e2e8f0;
+            color: #334155;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            transition: all 0.2s ease;
+        }
+        
+        .keyword-pill:hover {
+            background-color: #cbd5e1;
+        }
+        
+        .source-link {
+            display: inline-flex;
+            align-items: center;
+            color: #3b82f6;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        .source-link:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+        
+        .source-link i {
+            margin-left: 0.25rem;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            border-radius: 3px;
+        }
+        
+        .anode-title::after {
+            background-color: #3b82f6;
+        }
+        
+        .downstream-title::after {
+            background-color: #10b981;
+        }
+        
+        .timestamp {
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+        
+        .news-brief {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* 加载动画 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+        }
+        
+        /* 响应式调整 */
+        @media (max-width: 640px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .news-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- 头部 -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto py-6 px-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800">新能源负极材料行业新闻快讯</h1>
+            <p class="text-center text-gray-500 mt-2">2026年1月12日-2026年1月18日</p>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto py-8 px-4">
+        <!-- 负极材料行业资讯 -->
+        <section class="mb-12">
+            <h2 class="text-xl md:text-2xl font-semibold mb-6 section-title anode-title flex items-center">
+                <i class="fas fa-bolt text-blue-500 mr-2"></i>负极材料行业资讯
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- 资讯1 -->
+                <article class="news-card anode-card bg-white rounded-lg shadow p-5 fade-in" style="animation-delay: 0.1s;">
+                    <h3 class="text-lg md:text-xl font-medium mb-2 text-gray-800">聚鑫新能源9万吨负极材料改扩建项目启动</h3>
+                    <p class="timestamp mb-3">2026-01-12 16:27:00</p>
+                    <p class="news-brief text-gray-600 mb-4">1月12日，湛江市聚鑫新能源启动年产9万吨负极材料智能化改扩建项目，球形石墨产能由3万吨增至5万吨，新增3万吨回收料及1万吨高碳石墨产能，主要供应宁德时代、贝特瑞等头部企业。</p>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="keyword-pill">产能扩张</span>
+                        <span class="keyword-pill">回收料</span>
+                        <span class="keyword-pill">聚鑫新能源</span>
+                        <span class="keyword-pill">高碳石墨</span>
+                    </div>
+                    <a href="https://cj.sina.com.cn/article/norm_detail?finpagefr=w_110&url=https%3A%2F%2Ffinance.sina.com.cn%2Froll%2F2026-01-12%2Fdoc-inhfzukr6850791.shtml" class="source-link" target="_blank">
+                        查看原文 <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
+                
+                <!-- 资讯2 -->
+                <article class="news-card anode-card bg-white rounded-lg shadow p-5 fade-in" style="animation-delay: 0.2s;">
+                    <h3 class="text-lg md:text-xl font-medium mb-2 text-gray-800">国轩高科万吨硅碳负极项目开工</h3>
+                    <p class="timestamp mb-3">2026-01-14 10:11:39</p>
+                    <p class="news-brief text-gray-600 mb-4">1月14日，国轩高科庐江年产1万吨硅碳负极项目开工，采用"纳米限域包覆"技术，膨胀率控制在25%以内，适配4680圆柱电池，预计2027年Q1投产，年产能满足10GWh电池需求。</p>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="keyword-pill">硅碳负极</span>
+                        <span class="keyword-pill">国轩高科</span>
+                        <span class="keyword-pill">纳米包覆</span>
+                        <span class="keyword-pill">圆柱电池</span>
+                    </div>
+                    <a href="http://m.toutiao.com/group/7595034171018363430/?upstream_biz=doubao" class="source-link" target="_blank">
+                        查看原文 <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
+                
+                <!-- 资讯3 -->
+                <article class="news-card anode-card bg-white rounded-lg shadow p-5 fade-in" style="animation-delay: 0.3s;">
+                    <h3 class="text-lg md:text-xl font-medium mb-2 text-gray-800">圣泉集团1000吨硅碳负极项目进入试生产</h3>
+                    <p class="timestamp mb-3">2026-01-16 09:38:46</p>
+                    <p class="news-brief text-gray-600 mb-4">1月16日，圣泉集团年产1000吨硅碳负极材料项目进入设备调试阶段，采用CVD气相沉积工艺，产品能量密度提升30%，计划2026年Q1投产，主要应用于固态电池领域。</p>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="keyword-pill">硅碳负极</span>
+                        <span class="keyword-pill">CVD工艺</span>
+                        <span class="keyword-pill">圣泉集团</span>
+                        <span class="keyword-pill">固态电池</span>
+                    </div>
+                    <a href="http://m.toutiao.com/group/7595034171018363430/?upstream_biz=doubao" class="source-link" target="_blank">
+                        查看原文 <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
+                
+                <!-- 资讯4 -->
+                <article class="news-card anode-card bg-white rounded-lg shadow p-5 fade-in" style="animation-delay: 0.4s;">
+                    <h3 class="text-lg md:text-xl font-medium mb-2 text-gray-800">宁夏瑞鼎8万吨负极材料项目入选省级重点</h3>
+                    <p class="timestamp mb-3">2026-01-17 10:21:03</p>
+                    <p class="news-brief text-gray-600 mb-4">1月17日，宁夏瑞鼎新材料年产8万吨锂电池负极材料项目入选自治区重点项目，总投资25亿元，采用一体化生产工艺，预计2027年投产，产品主要供应储能电池企业。</p>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="keyword-pill">产能规划</span>
+                        <span class="keyword-pill">宁夏瑞鼎</span>
+                        <span class="keyword-pill">一体化生产</span>
+                        <span class="keyword-pill">储能适配</span>
+                    </div>
+                    <a href="https://baijiahao.baidu.com/s?id=1854255852950735022" class="source-link" target="_blank">
+                        查看原文 <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
+                
+                <!-- 资讯5 -->
+                <article class="news-card anode-card bg-white rounded-lg shadow p-5 fade-in" style="animation-delay: 0.5s;">
+                    <h3 class="text-lg md:text-xl font-medium mb-2 text-gray-800">负极石墨化加工费维持高位运行</h3>
+                    <p class="timestamp mb-3">2026-01-15 18:01:10</p>
+                    <p class="news-brief text-gray-600 mb-4">1月15日SMM数据显示，高端石墨化加工费0.93-0.96万元/吨，中端0.83-0.91万元/吨，价格连续8周持稳。针状焦原料价格环比上涨5.2%，成本支撑下负极材料价格预计延续坚挺。</p>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="keyword-pill">石墨化加工费</span>
+                        <span class="keyword-pill">成本支撑</span>
+                        <span class="keyword-pill">SMM</span>
+                        <span class="keyword-pill">价格维稳</span>
+                    </div>
+                    <a href="http://m.toutiao.com/group/7595526147371205172/?upstream_biz=doubao" class="source-link" target="_blank">
+                        查看原文 <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
+                
+                <!-- 资讯6 -->
+                <article class="news-card anode-card bg-white rounded-lg shadow p-5 fade-in" style="animation-delay: 0.6s;">
+                    <h3 class="text-lg md:text-xl font-medium mb-2 text-gray-800">硅宝科技2000吨硅碳改性剂项目环评公示</h3>
+                    <p class="timestamp mb-3">2026-01-13 10:11:39</p>
+                    <p class="news-brief text-gray-600 mb-4">1月13日，硅宝科技年产2000吨硅碳负极专用改性剂项目进入环评公示阶段，产品包括碳纳米管粉体及浆料，用于提升硅碳负极导电性与循环稳定性，2027年Q1投产。</p>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="keyword-pill">改性剂</span>
+                        <span class="keyword-pill">碳纳米管</span>
+                        <span class="keyword-pill">硅宝科技</span>
+                        <span class="keyword-pill">界面优化</span>
+                    </div>
+                    <a href="http://m.toutiao.com/group/7595034171018363430/?upstream_biz=doubao" class="source-link" target="_blank">
+                        查看原文 <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
+                
+                <!-- 资讯7 -->
+                <article class="news-card anode-card bg-white rounded-lg shadow p-5 fade-in" style="animation-delay: 0.7s;">
+                    <h3 class="text-lg md:text-xl font-medium mb-2 text-gray-800">百川股份10万吨负极一体化项目达产</h3>
+                    <p class="timestamp mb-3">2026-01-16 08:28:00</p>
+                    <p class="news-brief text-gray-600 mb-4">1月16日，百川股份宁夏宁东10万吨负极材料一体化项目实现满产，石墨化自给率100%，依托当地能源优势，产品单位成本较行业平均低15%，主要供应动力电池及储能客户。</p>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="keyword-pill">一体化生产</span>
+                        <span class="keyword-pill">成本优势</span>
+                        <span class="keyword-pill">百川股份</span>
+                        <span class="keyword-pill">产能释放</span>
+                    </div>
+                    <a href="https://news.cnpowder.com.cn/87399.html" class="source-link" target="_blank">
+                        查看原文 <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+        
+        <!-- 锂电池下游行业资讯 -->
+        <section>
+            <h2 class="text-xl md:text-2xl font-semibold mb-6 section-title downstream-title flex items-center">
+                <i class="fas fa-battery-full text-green-500 mr-2"></i>锂电池下游行业资讯
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- 资讯1 -->
+                <article class="news-card downstream-card bg-white rounded-lg shadow p-5 fade-in" style="animation-delay: 0.8s;">
+                    <h3 class="text-lg md:text-xl font-medium mb-2 text-gray-800">碳酸锂价格突破16万元/吨</h3>
+                    <p class="timestamp mb-3">2026-01-15 18:32:00</p>
+                    <p class="news-brief text-gray-600 mb-4">1月15日SMM数据显示，电池级碳酸锂价格涨至15.6-16.2万元/吨（周涨8.5%），氢氧化锂13.8-14.5万元/吨（周涨1.6%），期货主力合约升水现货3200元/吨，产业链库存连续21周去化。</p>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="keyword-pill">碳酸锂涨价</span>
+                        <span class="keyword-pill">期货升水</span>
+                        <span class="keyword-pill">SMM</span>
+                        <span class="keyword-pill">库存去化</span>
+                    </div>
+                    <a href="https://newenergy.smm.cn/news/special/14042" class="source-link" target="_blank">
+                        查看原文 <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
+                
+                <!-- 资讯2 -->
+                <article class="news-card downstream-card bg-white rounded-lg shadow p-5 fade-in" style="animation-delay: 0.9s;">
+                    <h3 class="text-lg md:text-xl font-medium mb-2 text-gray-800">2025年全球储能电池出货640GWh</h3>
+                    <p class="timestamp mb-3">2026-01-16 08:28:00</p>
+                    <p class="news-brief text-gray-600 mb-4">1月16日鑫椤资讯数据显示，2025年全球储能电池出货640GWh（同比增长82.9%），其中国内企业出货621.5GWh，占比97.1%。宁德时代、比亚迪、亿纬锂能稳居全球前三，合计市占率达68%。</p>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="keyword-pill">储能电池</span>
+                        <span class="keyword-pill">出货量</span>
+                        <span class="keyword-pill">鑫椤资讯</span>
+                        <span class="keyword-pill">全球前三</span>
+                    </div>
+                    <a href="https://t.10jqka.com.cn/pid_586011439.shtml" class="source-link" target="_blank">
+                        查看原文 <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-100 py-6 mt-12">
+        <div class="container mx-auto px-4 text-center text-gray-600 text-sm">
+            <p>created by <a href="https://space.coze.cn" class="text-blue-500 hover:underline" target="_blank">coze space</a></p>
+            <p class="mt-2">页面内容均由 AI 生成，仅供参考</p>
+        </div>
+    </footer>
+
+    <script>
+        // 页面加载后执行的脚本
+        document.addEventListener('DOMContentLoaded', function() {
+            // 为卡片添加渐入动画
+            const cards = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+            
+            // 为关键词添加点击事件，可用于筛选（此处仅添加视觉反馈）
+            const keywords = document.querySelectorAll('.keyword-pill');
+            keywords.forEach(keyword => {
+                keyword.addEventListener('click', function() {
+                    this.classList.toggle('bg-blue-100');
+                    this.classList.toggle('text-blue-800');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
