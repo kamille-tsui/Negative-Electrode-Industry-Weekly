@@ -2,315 +2,416 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
     <title>负极材料行业资讯汇总 | 2026年3月23日-3月29日</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
-            color: #333;
+            padding: 12px;
+            color: #1e2a3e;
+            min-height: 100vh;
         }
 
+        /* 主容器 — 移动优先，舒适圆角 */
         .container {
-            max-width: 900px;
+            max-width: 100%;
             margin: 0 auto;
-            background: white;
-            border-radius: 12px;
+            background: #ffffff;
+            border-radius: 28px;
             overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.35);
         }
 
+        /* 头部区域 — 紧凑且视觉突出 */
         .header {
-            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            background: linear-gradient(135deg, #0f2b6d 0%, #1cc6c2 100%);
             color: white;
-            padding: 40px 30px;
+            padding: 32px 20px;
             text-align: center;
         }
 
         .header h1 {
-            font-size: 2.2em;
-            margin-bottom: 10px;
+            font-size: 1.85rem;
             font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+            line-height: 1.25;
         }
 
         .header .subtitle {
-            font-size: 1.1em;
-            opacity: 0.9;
-            font-weight: 300;
+            font-size: 0.95rem;
+            opacity: 0.92;
+            font-weight: 400;
+            letter-spacing: 0.3px;
         }
 
+        /* 内容区域 — 减少左右留白，提升阅读宽度 */
         .content {
-            padding: 30px;
+            padding: 20px 16px 24px;
         }
 
+        /* 资讯卡片 — 移动触感舒适，点击区域友好 */
         .news-item {
-            background: #fff;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 25px;
+            background: #ffffff;
+            border: 1px solid #eef2f6;
+            border-radius: 20px;
+            padding: 18px 16px;
             margin-bottom: 20px;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
         }
 
-        .news-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            border-color: #1a2980;
+        .news-item:active {
+            transform: scale(0.99);
+            background-color: #fafcff;
         }
 
-        .news-title {
-            font-size: 1.3em;
-            color: #1a2980;
-            margin-bottom: 12px;
+        /* 分类标签 */
+        .section-tag {
+            display: inline-block;
+            background: linear-gradient(115deg, #5b6eeb, #8a63d2);
+            color: white;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 0.7rem;
             font-weight: 600;
-            line-height: 1.4;
+            letter-spacing: 0.3px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
 
+        /* 标题 — 移动端适中加粗 */
+        .news-title {
+            font-size: 1.28rem;
+            font-weight: 680;
+            color: #0a2540;
+            margin-bottom: 12px;
+            line-height: 1.35;
+            letter-spacing: -0.2px;
+        }
+
+        /* 元数据区域 — 自适应换行，留白合理 */
         .news-meta {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            color: #666;
-            font-size: 0.9em;
-            margin-bottom: 15px;
+            gap: 10px 8px;
+            color: #5b6e7c;
+            font-size: 0.75rem;
+            margin-bottom: 14px;
             padding-bottom: 12px;
-            border-bottom: 1px solid #f0f0f0;
+            border-bottom: 1px solid #edf2f7;
         }
 
         .news-meta .date {
-            font-weight: 500;
+            font-weight: 540;
+            background: #f0f4f9;
+            padding: 3px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            letter-spacing: 0.2px;
         }
 
         .news-meta .source {
-            background: #f0f0f0;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.85em;
+            background: #f0f2f5;
+            padding: 3px 12px;
+            border-radius: 24px;
+            font-weight: 480;
+            color: #2c3e50;
         }
 
-        .news-summary {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
+        /* 关键词 */
         .news-keywords {
-            color: #667eea;
-            font-size: 0.85em;
+            color: #5f7f9e;
+            font-size: 0.7rem;
+            font-weight: 500;
             margin-bottom: 12px;
-            font-weight: 500;
+            background: #f8fafd;
+            padding: 6px 12px;
+            border-radius: 18px;
+            display: inline-block;
+            width: auto;
+            letter-spacing: 0.2px;
+            word-break: break-word;
         }
 
+        /* 摘要 — 行距舒适，易读 */
+        .news-summary {
+            color: #2d3e50;
+            font-size: 0.9rem;
+            line-height: 1.55;
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        /* 链接按钮 — 移动端加大点按区域 */
         .news-link {
-            display: inline-block;
-            color: #26d0ce;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #f1f5fe;
+            padding: 8px 18px;
+            border-radius: 40px;
+            color: #2c5f8a;
             text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
+            font-weight: 520;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+            border: 0.5px solid rgba(44, 95, 138, 0.15);
         }
 
-        .news-link:hover {
-            color: #1a2980;
+        .news-link:active {
+            background: #e2eaff;
+            transform: scale(0.97);
         }
 
+        /* 页脚 */
         .footer {
-            background: #f8f9fa;
-            padding: 25px;
+            background: #f8fafc;
+            padding: 20px 20px;
             text-align: center;
-            color: #666;
-            font-size: 0.9em;
-            border-top: 1px solid #e0e0e0;
+            color: #5f7d9c;
+            font-size: 0.7rem;
+            border-top: 1px solid #e9edf2;
+            line-height: 1.45;
         }
 
-        .section-tag {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 3px 10px;
-            border-radius: 4px;
-            font-size: 0.75em;
-            margin-bottom: 8px;
-            font-weight: 500;
+        /* 平板及以上设备 (最小宽度 640px) 保持优雅居中 */
+        @media (min-width: 640px) {
+            body {
+                padding: 24px;
+            }
+            .container {
+                max-width: 780px;
+                border-radius: 32px;
+            }
+            .header {
+                padding: 44px 32px;
+            }
+            .header h1 {
+                font-size: 2.1rem;
+            }
+            .content {
+                padding: 28px 28px 32px;
+            }
+            .news-item {
+                padding: 24px 24px;
+                margin-bottom: 24px;
+                border-radius: 24px;
+            }
+            .news-title {
+                font-size: 1.38rem;
+            }
+            .news-summary {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+            .news-link {
+                padding: 8px 22px;
+                font-size: 0.85rem;
+            }
         }
 
-        .highlight {
-            background: #fff9c4;
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-weight: 600;
+        /* 大屏幕舒适区域（桌面宽屏） */
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 880px;
+            }
+            .news-item {
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+            .news-item:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 18px 32px -12px rgba(0, 0, 0, 0.2);
+                border-color: #cbdff2;
+            }
+        }
+
+        /* 防止长单词溢出 */
+        .news-summary, .news-title, .news-keywords {
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* 让内嵌链接更好看 */
+        .news-link::before {
+            content: "🔗";
+            font-size: 0.8rem;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>负极材料行业资讯汇总</h1>
-            <div class="subtitle">2026年3月23日 - 3月29日</div>
+<div class="container">
+    <div class="header">
+        <h1>负极材料行业资讯汇总</h1>
+        <div class="subtitle">2026年3月23日 - 3月29日</div>
+    </div>
+
+    <div class="content">
+        <!-- 资讯1 -->
+        <div class="news-item">
+            <span class="section-tag">企业动态</span>
+            <div class="news-title">贝特瑞固态电池订单暴涨</div>
+            <div class="news-meta">
+                <span class="date">2026-03-23</span>
+                <span class="source">鑫椤资讯</span>
+            </div>
+            <div class="news-keywords">关键词：固态电池 | 贝特瑞 | 固液混合电池</div>
+            <div class="news-summary">
+                2026年被称为“固态电池元年”，众多车企密集发布相关时间表，但实际量产装车的多为固液混合电池（半固态电池）。在极寒测试中，这类电池表现出优异的保电与启动性能。受行业热度推动，上游材料企业贝特瑞的氧化物固态电解质订单暴涨，已启动24小时生产，甚至将试产线用于客户交付。
+            </div>
+            <a href="https://mp.weixin.qq.com/s/RhZwj--42P5J64BE3l4MuQ" class="news-link" target="_blank" rel="noopener noreferrer"> 原文链接</a>
         </div>
 
-        <div class="content">
-            <!-- 资讯1 -->
-            <div class="news-item">
-                <span class="section-tag">企业动态</span>
-                <div class="news-title">贝特瑞固态电池订单暴涨</div>
-                <div class="news-meta">
-                    <span class="date">2026-03-23</span>
-                    <span class="source">鑫椤资讯</span>
-                </div>
-                <div class="news-keywords">关键词：固态电池 | 贝特瑞 | 固液混合电池</div>
-                <div class="news-summary">
-                    2026年被称为“固态电池元年”，众多车企密集发布相关时间表，但实际量产装车的多为固液混合电池（半固态电池）。在极寒测试中，这类电池表现出优异的保电与启动性能。受行业热度推动，上游材料企业贝特瑞的氧化物固态电解质订单暴涨，已启动24小时生产，甚至将试产线用于客户交付。
-                </div>
-                <a href="https://mp.weixin.qq.com/s/RhZwj--42P5J64BE3l4MuQ" class="news-link" target="_blank">📎 原文链接</a>
+        <!-- 资讯2 -->
+        <div class="news-item">
+            <span class="section-tag">企业动态</span>
+            <div class="news-title">恒大高新:参股企业湖北匠芯千吨级CVD新型气相硅碳负极,预计4-5月批量投产</div>
+            <div class="news-meta">
+                <span class="date">2026-03-23</span>
+                <span class="source">鑫椤资讯</span>
             </div>
-
-            <!-- 资讯2 -->
-            <div class="news-item">
-                <span class="section-tag">企业动态</span>
-                <div class="news-title">恒大高新:参股企业湖北匠芯千吨级CVD新型气相硅碳负极,预计4-5月批量投产</div>
-                <div class="news-meta">
-                    <span class="date">2026-03-23</span>
-                    <span class="source">鑫椤资讯</span>
-                </div>
-                <div class="news-keywords">关键词：硅碳负极 | CVD工艺 | 湖北匠芯</div>
-                <div class="news-summary">
-                    恒大高新在投资者互动平台表示,参股企业湖北匠芯千吨级CVD硅碳负极产线正在建设,预计2026年4-5月可实现批量投产。CVD硅碳负极材料能量密度高于传统石墨负极材料,被视为新能源电池产业发展的重要方向,可应用于电动工具、汽车、无人机、各种电子产品等领域,改进电池性能并提升续航能力。恒大高新持股20%,该项目可享受宜昌高新区税收优惠、研发补贴等政策扶持,符合公司向新能源、新材料领域转型的战略方向。
-                </div>
-                <a href="https://mp.weixin.qq.com/s/liJqo0llGWrQKEHV2hyeFQ" class="news-link" target="_blank">📎 原文链接</a>
+            <div class="news-keywords">关键词：硅碳负极 | CVD工艺 | 湖北匠芯</div>
+            <div class="news-summary">
+                恒大高新在投资者互动平台表示,参股企业湖北匠芯千吨级CVD硅碳负极产线正在建设,预计2026年4-5月可实现批量投产。CVD硅碳负极材料能量密度高于传统石墨负极材料,被视为新能源电池产业发展的重要方向,可应用于电动工具、汽车、无人机、各种电子产品等领域,改进电池性能并提升续航能力。恒大高新持股20%,该项目可享受宜昌高新区税收优惠、研发补贴等政策扶持,符合公司向新能源、新材料领域转型的战略方向。
             </div>
+            <a href="https://mp.weixin.qq.com/s/liJqo0llGWrQKEHV2hyeFQ" class="news-link" target="_blank" rel="noopener noreferrer"> 原文链接</a>
+        </div>
 
-            <!-- 资讯3 -->
-            <div class="news-item">
-                <span class="section-tag">企业动态</span>
-                <div class="news-title">坤天新能硅碳负极获多家头部客户批量供货,迈入规模化放量新阶段</div>
-                <div class="news-meta">
-                    <span class="date">2026-03-23</span>
-                    <span class="source">鑫椤资讯</span>
-                </div>
-                <div class="news-keywords">关键词：坤天新能 | 硅碳负极 | 规模化放量</div>
-                <div class="news-summary">
-                    河北坤天新能源自主研发的气相沉积硅碳负极材料已实现批量供货,月出货量由几十吨级跃升至百吨级,供货规模持续攀升。公司通过气相沉积工艺创新与设备优化,成功攻克了硅碳负极长期困扰行业的核心痛点,实现批次输出稳定性,有效提升包覆层均匀性并显著降低产气副反应,循环性能大幅改善,铁锂体系下达到2500次循环后容量保持率80%以上。公司已向国外头部客户实现稳定批量供货,同时通过国内多家头部电池企业验证导入,客户反馈良好。
-                </div>
-                <a href="https://mp.weixin.qq.com/s/YMTln85x6Kp3MTuV89ilSw" class="news-link" target="_blank">📎 原文链接</a>
+        <!-- 资讯3 -->
+        <div class="news-item">
+            <span class="section-tag">企业动态</span>
+            <div class="news-title">坤天新能硅碳负极获多家头部客户批量供货,迈入规模化放量新阶段</div>
+            <div class="news-meta">
+                <span class="date">2026-03-23</span>
+                <span class="source">鑫椤资讯</span>
             </div>
-
-            <!-- 资讯4 -->
-            <div class="news-item">
-                <span class="section-tag">企业动态</span>
-                <div class="news-title">新玩家加入，5万吨负极材料项目</div>
-                <div class="news-meta">
-                    <span class="date">2026-03-24</span>
-                    <span class="source">鑫椤资讯</span>
-                </div>
-                <div class="news-keywords">关键词：融捷股份 | 人造石墨 | 兰州项目</div>
-                <div class="news-summary">
-                    融捷股份发布2025年业绩报告，全年营收8.40亿元，同比增长49.71%；净利润2.79亿元，同比增长29.52%。同时公告，其全资子公司兰州融捷材料将投资11亿元建设年产5万吨高性能锂离子电池负极材料项目。项目位于兰州新区，已获20.85万平方米工业用地，聚焦高容量、高功率、高安全的高端人造石墨产品，采用超高温改性技术，填补市场缺口，提升公司在锂电池材料领域的竞争力。
-                </div>
-                <a href="https://mp.weixin.qq.com/s/FxVA2391Te25kh4CYZ5Xyw" class="news-link" target="_blank">📎 原文链接</a>
+            <div class="news-keywords">关键词：坤天新能 | 硅碳负极 | 规模化放量</div>
+            <div class="news-summary">
+                河北坤天新能源自主研发的气相沉积硅碳负极材料已实现批量供货,月出货量由几十吨级跃升至百吨级,供货规模持续攀升。公司通过气相沉积工艺创新与设备优化,成功攻克了硅碳负极长期困扰行业的核心痛点,实现批次输出稳定性,有效提升包覆层均匀性并显著降低产气副反应,循环性能大幅改善,铁锂体系下达到2500次循环后容量保持率80%以上。公司已向国外头部客户实现稳定批量供货,同时通过国内多家头部电池企业验证导入,客户反馈良好。
             </div>
+            <a href="https://mp.weixin.qq.com/s/YMTln85x6Kp3MTuV89ilSw" class="news-link" target="_blank" rel="noopener noreferrer"> 原文链接</a>
+        </div>
 
-            <!-- 资讯5 -->
-            <div class="news-item">
-                <span class="section-tag">行业论坛</span>
-                <div class="news-title">2026(第十九届)锂电负极材料市场及前沿技术高峰论坛在常州举行</div>
-                <div class="news-meta">
-                    <span class="date">2026-03-26</span>
-                    <span class="source">鑫椤资讯</span>
-                </div>
-                <div class="news-keywords">关键词：负极论坛 | AI应用 | 行业展望</div>
-                <div class="news-summary">
-                    3月19日,鑫椤资讯2026(第十九届)锂电负极材料市场及前沿技术高峰论坛在江苏常州举行。2026年锂电产业将迎来新一轮周期性增长浪潮,特征鲜明,需求端强势复苏,全球化版图加速扩张,技术路线迎来颠覆性迭代。贝特瑞研究院院长李子坤提出AI技术已成为企业突破硅基改性、快充优化等痛点的核心工具。会议举办2026年负极材料行业优秀供应商颁奖典礼,表彰在行业发展中表现突出的企业。会议明确了2026年"底部修复+技术升级+出海加速"的发展主线。
-                </div>
-                <a href="http://www.iccarbon.com/news/show-htm-itemid-42213.html" class="news-link" target="_blank">📎 原文链接</a>
+        <!-- 资讯4 -->
+        <div class="news-item">
+            <span class="section-tag">企业动态</span>
+            <div class="news-title">新玩家加入，5万吨负极材料项目</div>
+            <div class="news-meta">
+                <span class="date">2026-03-24</span>
+                <span class="source">鑫椤资讯</span>
             </div>
+            <div class="news-keywords">关键词：融捷股份 | 人造石墨 | 兰州项目</div>
+            <div class="news-summary">
+                融捷股份发布2025年业绩报告，全年营收8.40亿元，同比增长49.71%；净利润2.79亿元，同比增长29.52%。同时公告，其全资子公司兰州融捷材料将投资11亿元建设年产5万吨高性能锂离子电池负极材料项目。项目位于兰州新区，已获20.85万平方米工业用地，聚焦高容量、高功率、高安全的高端人造石墨产品，采用超高温改性技术，填补市场缺口，提升公司在锂电池材料领域的竞争力。
+            </div>
+            <a href="https://mp.weixin.qq.com/s/FxVA2391Te25kh4CYZ5Xyw" class="news-link" target="_blank" rel="noopener noreferrer"> 原文链接</a>
+        </div>
 
-            <!-- 资讯6 -->
-            <div class="news-item">
-                <span class="section-tag">企业动态</span>
-                <div class="news-title">江西、江苏两大硅碳负极项目最新进展</div>
-                <div class="news-meta">
-                    <span class="date">2026-03-25</span>
-                    <span class="source">鑫椤资讯</span>
-                </div>
-                <div class="news-keywords">关键词：硅碳负极 | 项目进展 | 赣州立探</div>
-                <div class="news-summary">
+        <!-- 资讯5 -->
+        <div class="news-item">
+            <span class="section-tag">行业论坛</span>
+            <div class="news-title">2026(第十九届)锂电负极材料市场及前沿技术高峰论坛在常州举行</div>
+            <div class="news-meta">
+                <span class="date">2026-03-26</span>
+                <span class="source">鑫椤资讯</span>
+            </div>
+            <div class="news-keywords">关键词：负极论坛 | AI应用 | 行业展望</div>
+            <div class="news-summary">
+                3月19日,鑫椤资讯2026(第十九届)锂电负极材料市场及前沿技术高峰论坛在江苏常州举行。2026年锂电产业将迎来新一轮周期性增长浪潮,特征鲜明,需求端强势复苏,全球化版图加速扩张,技术路线迎来颠覆性迭代。贝特瑞研究院院长李子坤提出AI技术已成为企业突破硅基改性、快充优化等痛点的核心工具。会议举办2026年负极材料行业优秀供应商颁奖典礼,表彰在行业发展中表现突出的企业。会议明确了2026年"底部修复+技术升级+出海加速"的发展主线。
+            </div>
+            <a href="http://www.iccarbon.com/news/show-htm-itemid-42213.html" class="news-link" target="_blank" rel="noopener noreferrer"> 原文链接</a>
+        </div>
+
+        <!-- 资讯6 -->
+        <div class="news-item">
+            <span class="section-tag">企业动态</span>
+            <div class="news-title">江西、江苏两大硅碳负极项目最新进展</div>
+            <div class="news-meta">
+                <span class="date">2026-03-25</span>
+                <span class="source">鑫椤资讯</span>
+            </div>
+            <div class="news-keywords">关键词：硅碳负极 | 项目进展 | 赣州立探</div>
+            <div class="news-summary">
                     国内两个硅碳负极材料项目的最新动态。赣州立探新能源计划投资8000万元，在江西赣州扩建年产500吨新型硅碳负极材料项目；江苏炭元新材料拟投资1.1亿元，在连云港建设年产300吨硅碳负极用有序介孔碳材料生产线。两个项目均已进入环评公示阶段，预示着硅碳负极材料产业化进程正在加快。
-                </div>
-                <a href="https://mp.weixin.qq.com/s/weHMNYXsZ_xJhfgw5gESnQ" class="news-link" target="_blank">📎 原文链接</a>
             </div>
-
-            <!-- 资讯7 -->
-            <div class="news-item">
-                <span class="section-tag">技术升级</span>
-                <div class="news-title">第六代快充、硅碳、硬碳、储能……杉杉负极材料2026大上新</div>
-                <div class="news-meta">
-                    <span class="date">2026-03-26</span>
-                    <span class="source">鑫椤资讯</span>
-                </div>
-                <div class="news-keywords">关键词：杉杉股份 | 负极材料 | 技术升级</div>
-                <div class="news-summary">
-                    杉杉2026年在负极材料领域的技术矩阵升级。快充石墨推出第6代产品，在高压实下实现低膨胀；硅碳负极AS6BP系列突破25%高掺硅，已在手机端应用并实现动力电池批量供应；硬碳材料在-30℃极寒下性能稳定，并进入固态电池领域；储能石墨月出货量超万吨，供不应求。
-                </div>
-                <a href="https://mp.weixin.qq.com/s/fWEKlTGZ6-ejpBL_RDHsYA" class="news-link" target="_blank">📎 原文链接</a>
-            </div>
-
-            <!-- 资讯8 -->
-            <div class="news-item">
-                <span class="section-tag">行业研究</span>
-                <div class="news-title">新型气相硅碳负极市场扩容,2026年将迎需求关键期</div>
-                <div class="news-meta">
-                    <span class="date">2026-03-27</span>
-                    <span class="source">鑫椤资讯</span>
-                </div>
-                <div class="news-keywords">关键词：CVD硅碳 | 市场扩容 | 消费电子</div>
-                <div class="news-summary">
-                    新型气相硅碳负极采用化学气相沉积(CVD)工艺,通过"多孔碳骨架承载+气相硅沉积+二次碳包覆"路径,缓解硅材料体积膨胀问题,其循环寿命、首效、能量密度均优于传统产品,适配新能源汽车、固态电池等高端场景。目前市场处于"技术成熟提速、产能快速释放、需求持续攀升"关键阶段。国内企业呈现"头部引领、梯队跟进"格局,天目先导、碳一新能源、兰溪致德等第一梯队企业表现突出,贝特瑞、杉杉股份等传统石墨负极龙头逐步切入CVD领域。2025年CVD新型气相硅碳负极整体产量3104吨,其中第一梯队产量占比超过50%。
-                </div>
-                <a href="https://mp.weixin.qq.com/s/nOwsAWq1jYzPYpRt4mbAyg" class="news-link" target="_blank">📎 原文链接</a>
-            </div>
-
-            <!-- 资讯9 -->
-            <div class="news-item">
-                <span class="section-tag">行业研究</span>
-                <div class="news-title">中国石墨负极材料行业政策、产业链、出货情况、竞争格局及发展趋势研判</div>
-                <div class="news-meta">
-                    <span class="date">2026-03-19</span>
-                    <span class="source">智研咨询</span>
-                </div>
-                <div class="news-keywords">关键词：出货量增长 | 人造石墨 | 行业趋势</div>
-                <div class="news-summary">
-                    受益于国内外新能源汽车等终端市场增长拉动,我国锂电池相关行业发展快速,负极材料市场需求增大。2025年中国负极材料出货量约为290万吨,全球占比进一步提升至98.41%。预计2026年中国负极材料出货量达到370万吨,约占全球的96.10%。石墨负极材料作为锂离子电池的"心脏级"材料,目前占据了负极材料市场95%以上的份额。2025年,我国人造石墨出货量占负极材料总出货量的92.7%;天然石墨受海外电池客户加速切换人造石墨、国内应用场景持续萎缩影响,出货量则延续下滑。未来发展趋势包括人造石墨仍将是主流、技术革新推动产品性能提升、行业集中度提升、一体化趋势显著。
-                </div>
-                <a href="https://cj.sina.cn/article/norm_detail?url=https%3A%2F%2Ffinance.sina.com.cn%2Fstock%2Frelnews%2Fhk%2F2026-03-19%2Fdoc-inhrnvix8831267.shtml" class="news-link" target="_blank">📎 原文链接</a>
-            </div>
-
-            <!-- 资讯10 -->
-            <div class="news-item">
-                <span class="section-tag">市场数据</span>
-                <div class="news-title">20亿扭亏大反转 瑞浦兰钧做对了什么？</div>
-                <div class="news-meta">
-                    <span class="date">2026-03-29</span>
-                    <span class="source">高工锂电</span>
-                </div>
-                <div class="news-keywords">关键词：瑞浦兰钧 | 扭亏为盈 | 储能</div>
-                <div class="news-summary">
-                    瑞浦兰钧2025年年报，指出其实现成立以来首次盈利（净利润6.8亿元，较2024年扭亏近20亿元）的关键，在于从“规模优先”转向“经营质量优先”的体系性调整。具体措施包括：聚焦户储与商用车等结构性盈利市场、主动放弃低毛利订单、将产能利用率提升至95%、大力发展海外业务及系统集成业务。公司已从单纯的“电芯厂”向具备持续盈利能力的“系统玩家”和“全球化公司”转型。
-                </div>
-                <a href="https://mp.weixin.qq.com/s/nVUT9hxA1bEROhmnuGbHIA" class="news-link" target="_blank">📎 原文链接</a>
-            </div>
-
+            <a href="https://mp.weixin.qq.com/s/weHMNYXsZ_xJhfgw5gESnQ" class="news-link" target="_blank" rel="noopener noreferrer"> 原文链接</a>
         </div>
 
-        <div class="footer">
-            <p>© 2026 负极材料行业资讯汇总 | 信息整理自鑫椤资讯、高工锂电、上海有色网等专业机构</p>
+        <!-- 资讯7 -->
+        <div class="news-item">
+            <span class="section-tag">技术升级</span>
+            <div class="news-title">第六代快充、硅碳、硬碳、储能……杉杉负极材料2026大上新</div>
+            <div class="news-meta">
+                <span class="date">2026-03-26</span>
+                <span class="source">鑫椤资讯</span>
+            </div>
+            <div class="news-keywords">关键词：杉杉股份 | 负极材料 | 技术升级</div>
+            <div class="news-summary">
+                    杉杉2026年在负极材料领域的技术矩阵升级。快充石墨推出第6代产品，在高压实下实现低膨胀；硅碳负极AS6BP系列突破25%高掺硅，已在手机端应用并实现动力电池批量供应；硬碳材料在-30℃极寒下性能稳定，并进入固态电池领域；储能石墨月出货量超万吨，供不应求。
+            </div>
+            <a href="https://mp.weixin.qq.com/s/fWEKlTGZ6-ejpBL_RDHsYA" class="news-link" target="_blank" rel="noopener noreferrer"> 原文链接</a>
+        </div>
+
+        <!-- 资讯8 -->
+        <div class="news-item">
+            <span class="section-tag">行业研究</span>
+            <div class="news-title">新型气相硅碳负极市场扩容,2026年将迎需求关键期</div>
+            <div class="news-meta">
+                <span class="date">2026-03-27</span>
+                <span class="source">鑫椤资讯</span>
+            </div>
+            <div class="news-keywords">关键词：CVD硅碳 | 市场扩容 | 消费电子</div>
+            <div class="news-summary">
+                    新型气相硅碳负极采用化学气相沉积(CVD)工艺,通过"多孔碳骨架承载+气相硅沉积+二次碳包覆"路径,缓解硅材料体积膨胀问题,其循环寿命、首效、能量密度均优于传统产品,适配新能源汽车、固态电池等高端场景。目前市场处于"技术成熟提速、产能快速释放、需求持续攀升"关键阶段。国内企业呈现"头部引领、梯队跟进"格局,天目先导、碳一新能源、兰溪致德等第一梯队企业表现突出,贝特瑞、杉杉股份等传统石墨负极龙头逐步切入CVD领域。2025年CVD新型气相硅碳负极整体产量3104吨,其中第一梯队产量占比超过50%。
+            </div>
+            <a href="https://mp.weixin.qq.com/s/nOwsAWq1jYzPYpRt4mbAyg" class="news-link" target="_blank" rel="noopener noreferrer"> 原文链接</a>
+        </div>
+
+        <!-- 资讯9 -->
+        <div class="news-item">
+            <span class="section-tag">行业研究</span>
+            <div class="news-title">中国石墨负极材料行业政策、产业链、出货情况、竞争格局及发展趋势研判</div>
+            <div class="news-meta">
+                <span class="date">2026-03-19</span>
+                <span class="source">智研咨询</span>
+            </div>
+            <div class="news-keywords">关键词：出货量增长 | 人造石墨 | 行业趋势</div>
+            <div class="news-summary">
+                    受益于国内外新能源汽车等终端市场增长拉动,我国锂电池相关行业发展快速,负极材料市场需求增大。2025年中国负极材料出货量约为290万吨,全球占比进一步提升至98.41%。预计2026年中国负极材料出货量达到370万吨,约占全球的96.10%。石墨负极材料作为锂离子电池的"心脏级"材料,目前占据了负极材料市场95%以上的份额。2025年,我国人造石墨出货量占负极材料总出货量的92.7%;天然石墨受海外电池客户加速切换人造石墨、国内应用场景持续萎缩影响,出货量则延续下滑。未来发展趋势包括人造石墨仍将是主流、技术革新推动产品性能提升、行业集中度提升、一体化趋势显著。
+            </div>
+            <a href="https://cj.sina.cn/article/norm_detail?url=https%3A%2F%2Ffinance.sina.com.cn%2Fstock%2Frelnews%2Fhk%2F2026-03-19%2Fdoc-inhrnvix8831267.shtml" class="news-link" target="_blank" rel="noopener noreferrer"> 原文链接</a>
+        </div>
+
+        <!-- 资讯10 -->
+        <div class="news-item">
+            <span class="section-tag">市场数据</span>
+            <div class="news-title">20亿扭亏大反转 瑞浦兰钧做对了什么？</div>
+            <div class="news-meta">
+                <span class="date">2026-03-29</span>
+                <span class="source">高工锂电</span>
+            </div>
+            <div class="news-keywords">关键词：瑞浦兰钧 | 扭亏为盈 | 储能</div>
+            <div class="news-summary">
+                    瑞浦兰钧2025年年报，指出其实现成立以来首次盈利（净利润6.8亿元，较2024年扭亏近20亿元）的关键，在于从“规模优先”转向“经营质量优先”的体系性调整。具体措施包括：聚焦户储与商用车等结构性盈利市场、主动放弃低毛利订单、将产能利用率提升至95%、大力发展海外业务及系统集成业务。公司已从单纯的“电芯厂”向具备持续盈利能力的“系统玩家”和“全球化公司”转型。
+            </div>
+            <a href="https://mp.weixin.qq.com/s/nVUT9hxA1bEROhmnuGbHIA" class="news-link" target="_blank" rel="noopener noreferrer"> 原文链接</a>
         </div>
     </div>
+
+    <div class="footer">
+        <p>© 2026 负极材料行业资讯汇总 | 信息整理自鑫椤资讯、高工锂电、上海有色网等专业机构</p>
+    </div>
+</div>
 </body>
 </html>
