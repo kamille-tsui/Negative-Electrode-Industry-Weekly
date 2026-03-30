@@ -413,5 +413,74 @@
         <p>© 2026 负极材料行业资讯汇总 | 信息整理自鑫椤资讯、高工锂电、上海有色网等专业机构</p>
     </div>
 </div>
+
+<!-- 返回定位脚本：点击外部链接后返回时自动滚动到之前阅读的资讯位置 -->
+<script>
+    (function() {
+        // 1. 为每条资讯添加唯一的 data-id (索引)
+        const newsItems = document.querySelectorAll('.news-item');
+        newsItems.forEach((item, index) => {
+            item.setAttribute('data-id', index);
+        });
+
+        // 2. 存储被点击的资讯ID到 sessionStorage
+        function storeCurrentNewsItem(linkElement) {
+            const parentNews = linkElement.closest('.news-item');
+            if (parentNews && parentNews.dataset.id !== undefined) {
+                try {
+                    sessionStorage.setItem('return_news_id', parentNews.dataset.id);
+                } catch (e) {
+                    // 静默失败，不影响跳转
+                }
+            }
+        }
+
+        // 3. 为所有原文链接绑定点击事件
+        const allLinks = document.querySelectorAll('.news-link');
+        allLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                storeCurrentNewsItem(this);
+                // 不阻止冒泡，正常跳转
+            });
+        });
+
+        // 4. 恢复滚动位置：根据存储的资讯ID滚动到对应卡片
+        function restoreScrollPosition() {
+            let storedId = null;
+            try {
+                storedId = sessionStorage.getItem('return_news_id');
+            } catch (e) {}
+            if (storedId !== null && storedId !== undefined) {
+                const targetElement = document.querySelector(`.news-item[data-id="${storedId}"]`);
+                if (targetElement) {
+                    // 清除存储，防止重复滚动（刷新页面时也会定位一次，但符合预期）
+                    try {
+                        sessionStorage.removeItem('return_news_id');
+                    } catch (e) {}
+                    // 滚动到目标资讯，使其显示在视口顶部（带一点自然偏移，避免紧贴边缘）
+                    targetElement.scrollIntoView({ behavior: 'auto', block: 'start' });
+                } else {
+                    // 无效ID则清除存储
+                    try {
+                        sessionStorage.removeItem('return_news_id');
+                    } catch (e) {}
+                }
+            }
+        }
+
+        // 5. 页面完全加载后尝试恢复位置
+        window.addEventListener('load', function() {
+            restoreScrollPosition();
+        });
+
+        // 6. 针对浏览器 bfcache (前进后退缓存) 同样保证恢复
+        window.addEventListener('pageshow', function(event) {
+            // 如果页面是从缓存中恢复，也需要重新定位（避免丢失滚动位置）
+            if (event.persisted) {
+                restoreScrollPosition();
+            }
+        });
+    })();
+</script>
 </body>
 </html>
